@@ -1,0 +1,363 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+/***************
+   Sass Variables
+***************/
+$title-font: "Varela Round", sans-serif;
+$font-stack: Roboto, sans-serif;
+$font-color: #576366;
+$heading-color: #384047;
+$intro-color: #5fcf80;
+$background-color: #fff;
+$alt-background: #f4f7f8;
+
+/***************
+Total Page Rules
+***************/
+html,
+body {
+  font-family: $font-stack;
+  height: 100%;
+  background-color: $background-color;
+  margin: 0;
+}
+
+/***************
+   Font rules
+***************/
+h1,
+h2,
+h3,
+h4 {
+  color: $heading-color;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.5em;
+  padding: 20px 0;
+}
+h4 {
+  font-size: 1.125em;
+  margin-top: 0;
+  padding-top: 10px;
+}
+p {
+  font-size: 1em;
+  color: $font-color;
+  padding: 0 10px 20px;
+}
+#logo a {
+  font-family: $title-font;
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+/*****************
+Section Alignment
+*****************/
+
+
+
+/***************
+   Header
+***************/
+header {
+  position: fixed;
+  background-color: $background-color;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid $alt-background;
+  height: 4.5em;
+}
+
+/***************
+   Navigation
+***************/
+nav.mobile {
+  display: none;
+}
+.nav-list {
+  display: inline;
+  list-style: none;
+}
+#logo {
+  float: left;
+  margin-left: 40px;
+  padding-top: 10px;
+}
+#logo a:visited {
+  color: $heading-color;
+}
+.nav-item {
+  float: right;
+  margin-right: 40px;
+  padding-top: 30px;
+}
+#slideIn-desktop {
+  display: none;
+  text-align: center;
+  float: right;
+  margin-right: 40px;
+}
+button.headerButtonDesktop {
+  background-color: transparent;
+  border: 1px solid $intro-color;
+  width: 263px;
+  height: 52px;
+  border-radius: 10px;
+  font-size: 1em;
+  color: $intro-color;
+  margin-top: 10px;
+}
+button.headerButtonDesktop:hover,
+button.headerButton:active {
+  background-color: $intro-color;
+  color: $background-color;
+}
+button.headerButtonDesktop:focus {
+  outline: none;
+}
+
+/***************
+  Intro Section
+***************/
+.intro {
+  background-color: $intro-color;
+  height: 23em;
+  padding-top: 5em;
+  text-align: center;
+}
+hgroup {
+  padding: 20px;
+}
+hgroup > h1,
+h2 {
+  color: $background-color;
+}
+button.email {
+  margin-top: 5%;
+  width: 263px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: $background-color;
+  border: 1px solid #118c4e;
+  font-size: 1em;
+  color: $intro-color;
+  display: inline-block;
+}
+button.email:hover,
+button.email:active {
+  background-color: $alt-background;
+  color: $intro-color;
+}
+button.email:focus {
+  outline: none;
+}
+button.call {
+  display: none;
+}
+
+/***************
+Services Section
+***************/
+.info-block p {
+  border-bottom: 2px solid $alt-background;
+}
+.info-block img {
+  padding-top: 15px;
+}
+.info-block-last p {
+  border-bottom: none;
+}
+
+/***************
+Philosophy Section
+***************/
+.philosophy {
+  background-color: $alt-background;
+}
+.philosophy-block p {
+  border-bottom: 2px solid #f2f2f2;
+}
+.philosophy-block img {
+  padding-top: 15px;
+}
+.philosophy-block-last p {
+  border-bottom: none;
+}
+
+/***************
+Reviews Section
+***************/
+p.quote {
+  font-style: italic;
+}
+p.name {
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/***************
+  Footer
+***************/
+footer {
+  background-color: $alt-background;
+  text-align: center;
+}
+.footer-wrapper {
+  top: 0.5em;
+}
+.date.ng-binding {
+  padding-top: 10px;
+}
+img.contact {
+  width: 3em;
+  height: 3em;
+  padding-top: 5px;
+  margin-right: 20px;
+}
+.icons-link a {
+  font-size: 0.75em;
+  color: $font-color;
+  text-decoration: none;
+}
+.icons-link a:visited {
+  color: $font-color;
+}
+.icons {
+  color: $intro-color;
+}
+
+/***************
+MOBILE STYLES
+***************/
+@media only screen and (max-width: 50em) {
+
+/***************
+Total Page Rules
+***************/
+  html,
+  body {
+    margin: 0 auto;
+  }
+  #content {
+    text-align: center;
+  }
+  p {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 1.5em;
+    padding: 20px 0;
+  }
+  p.name {
+    font-weight: bold;
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+/*****************
+Section Alignment
+*****************/
+  #content {
+    text-align: center;
+  }
+
+/***************
+   Header
+***************/
+  header2 {
+    position: fixed;
+    background-color: $background-color;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid $alt-background;
+  }
+
+/***************
+   Navigation
+***************/
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile {
+    display: block;
+    text-align: center;
+  }
+  .nav-item-mobile {
+    display: inline;
+    margin-right: 2em;
+    list-style: none;
+  }
+  #logo-mobile a {
+    font-family: $title-font;
+    font-size: 3em;
+    text-decoration: none;
+  }
+  #logo-mobile a:visited {
+    color: $heading-color;
+  }
+  #slideIn-mobile {
+    display: none;
+  }
+  button.headerButton {
+    background-color: transparent;
+    border: 1px solid $intro-color;
+    width: 263px;
+    height: 52px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: $intro-color;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  button.headerButton:hover,
+  button.headerButton:active {
+    background-color: $intro-color;
+    color: $background-color;
+  }
+  button.headerButton:focus {
+    outline: none;
+  }
+
+  /***************
+  Intro Section
+***************/
+  button.call {
+    margin-top: 5%;
+    width: 263px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: $background-color;
+    border: 1px solid #118c4e;
+    font-size: 1em;
+    color: $intro-color;
+    display: inline-block;
+  }
+  button.call:hover,
+  button.call:active {
+    background-color: $alt-background;
+    color: $intro-color;
+  }
+  button.call:focus {
+    outline: none;
+  }
+  button.email {
+    display: none;
+  }
+}
+
+// * {
+//   border: 1px solid red;
+// }

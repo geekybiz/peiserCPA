@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html ng-app="peiserApp">
+
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='description' content="Tax return, tax consulting, monthly bookkeeping, payroll, sales tax, and contractors' license report services provided by an experienced accounting professional.">
+  <title>Bob Peiser, CPA: Tax Returns, Tax Consulting, Accounting Services</title>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body ng-controller="mainCtrl">
+  <div id="page">
+    <header>
+      <nav class="desktop">
+        <ul class="nav-list">
+          <span id="logo"><a href="#">Bob Peiser, CPA</a></span>
+          <li class="nav-item">Services</li>
+          <li class="nav-item">Philosophy</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+        <div id="slideIn-desktop">
+          <a href="mailto:bobpeisercpa@gmail.com"><button class="headerButtonDesktop"  type="button" name="Contact Us">Contact Us</button></a>
+        </div>
+      </nav>
+    </header>
+    <header2>
+      <nav class="mobile">
+        <div id="logo-mobile"><a href="#">Bob Peiser, CPA</a></div>
+        <ul class="nav-list-mobile">
+          <li class="nav-item-mobile">Services</li>
+          <li class="nav-item-mobile">Philosophy</li>
+          <li class="nav-item-mobile">Contact</li>
+        </ul>
+        <div id="slideIn-mobile">
+          <a href="tel:479-756-1199"><button class="headerButton"  type="button" name="Contact Us">Contact Us</button></a>
+        </div>
+      </nav>
+    </header2>
+    <div id="content">
+      <section class="intro">
+        <hgroup>
+          <h1>Make taxes and administrative processes a breeze.</h1>
+          <h2>Let us help manage your books and file your tax returns. </h2>
+        </hgroup>
+
+        <!-- Intro-Buttons -->
+        <a href="tel:479-756-1199"><button class="call" type="button" name="Click to Call">Contact Us</button></a>
+
+        <a href="mailto:bobpeisercpa@gmail.com"><button class="email" type="button" name="Click to Email">Contact Us</button></a>
+
+      </section>
+      <section class="services">
+        <div class="info-block">
+          <h3>Professional Accounting Services</h3>
+          <img src="images/Money-Transfer.png" alt="Tax Returns" />
+          <h4>Tax Returns</h4>
+          <p>
+            Let us help you prepare and file your business and personal federal and state tax returns.
+          </p>
+        </div>
+        <div class="info-block">
+          <img src="images/Bullish.png" alt="Tax Consulting" />
+          <h4>Tax Consulting</h4>
+          <p>
+            We will work to ensure your taxes are filed in the most efficient manner with the most value to you.
+          </p>
+        </div>
+        <div class="info-block">
+          <img src="images/Calendar.png" alt="Monthly Bookkeeping" />
+          <h4>Monthly Bookkeeping</h4>
+          <p>
+            Let us maintain your financial books so you can focus on growing your business.
+          </p>
+        </div>
+        <div class="info-block">
+          <img src="images/Debt.png" alt="Payroll" />
+          <h4>Payroll</h4>
+          <p>
+            We know you're busy with multiple facets of your business, and we can help operations run smooth by ensuring employees are payed on their regularly scheduled interval.
+          </p>
+          <div class="info-block">
+            <img src="images/US-Dollar.png" alt="Sales Tax Services" />
+            <h4>Sales Tax Services</h4>
+            <p>
+              It can be difficult to track taxes owed as revenue is generated. We can take the work out of it for you by overseeing this aspect of your business.
+            </p>
+          </div>
+          <div class="info-block-last">
+            <img src="images/Inspection.png" alt="Contractors License Reports" />
+            <h4>Contractors License Reports</h4>
+            <p class="no-bottom-border">
+              Let us help you generate contractors license reports.
+            </p>
+          </div>
+      </section>
+      <section class="philosophy">
+        <h3>Honest and Fair Collaboration with Clients</h3>
+        <div class="philosophy-block">
+          <img src="images/Scales.png" alt="Integrity" />
+          <h4>Integrity</h4>
+          <p>
+            Honesty and transparency are ingrained in our business practices, and we serve our clients while adhering to these conventions.
+          </p>
+        </div>
+        <div class="philosophy-block">
+          <img src="images/Approval.png" alt="Quality" />
+          <h4>Quality</h4>
+          <p>
+            We maintain a high standard of quality in our work with great focus on accuracy and timely delivery.
+          </p>
+        </div>
+        <div class="philosophy-block-last">
+          <img src="images/Graduation-Cap.png" alt="Experience" />
+          <h4>Experience</h4>
+          <p>
+            We have served our clients' accounting needs for over 40 years, and this experience is applied to our work everyday.
+          </p>
+        </div>
+      </section>
+      <section class="reviews">
+        <h3>What Our Customers Say</h3>
+        <p class="quote">
+          "Bob is dedicated, loyal, knowledgeable, creative, affordable and knows how to enjoy life! I highly recommend using his services for all of your accounting needs!"
+        </p>
+        <p class="name">
+          - Holly
+        </p>
+        <p class="quote">
+          "Bob is an amazing guy!! Only known him a short time but has already proven to be reliable and honest."
+        </p>
+        <p class="name">
+          - Donald
+        </p>
+      </section>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="date">
+            &copy;{{year}} Bob Peiser, CPA
+          </div>
+          <div class="contact-block">
+            <a href="tel:479-756-1199">
+              <img class="contact" src="images/phone.png" />
+            </a>
+            <a href="mailto:bobpeisercpa@gmail.com">
+              <img class="contact" src="images/Email.png" alt="email" />
+            </a>
+            <a href="https://www.facebook.com/Bob-Peiser-CPA-Payroll-Tax-Preparation-Bookkeeping-Services-387255728145978/info/?tab=overview">
+              <img class="contact" src="images/Facebook.svg" alt="facebook" />
+            </a>
+            <a href="https://www.linkedin.com/in/bob-peiser-08822a87">
+              <img class="contact" src="images/LinkedIn.svg" alt="linked-in" />
+            </a>
+          </div>
+          <div class="icons-link">
+          <a href="https://icons8.com/" target="_blank">Icons provided by <span class="icons">Icons8</span></a>
+        </div>
+      </footer>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/mainCtrl.js"></script>
+</body>
+
+</html>
