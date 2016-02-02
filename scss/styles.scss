@@ -21,7 +21,7 @@ body {
   font-family: $font-stack;
   height: 100%;
   background-color: $background-color;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /***************
@@ -42,6 +42,8 @@ h2 {
 h3 {
   font-size: 1.5em;
   padding: 20px 0;
+  text-align: center;
+
 }
 h4 {
   font-size: 1.125em;
@@ -62,7 +64,23 @@ p {
 /*****************
 Section Alignment
 *****************/
+#information {
+  width: 60em;
+  margin: 0 auto;
+}
 
+.services, .philosophy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info-block, .philosophy-block {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
 
 
 /***************
@@ -167,7 +185,7 @@ button.call {
 /***************
 Services Section
 ***************/
-.info-block p {
+section.services {
   border-bottom: 2px solid $alt-background;
 }
 .info-block img {
@@ -180,22 +198,23 @@ Services Section
 /***************
 Philosophy Section
 ***************/
-.philosophy {
-  background-color: $alt-background;
-}
-.philosophy-block p {
-  border-bottom: 2px solid #f2f2f2;
-}
 .philosophy-block img {
   padding-top: 15px;
 }
-.philosophy-block-last p {
-  border-bottom: none;
-}
+
 
 /***************
 Reviews Section
 ***************/
+section.reviews {
+  background-color: $alt-background;
+  margin: 0;
+}
+.quoteBlock {
+  max-width: 60em;
+  text-align: center;
+  margin: 0 auto;
+}
 p.quote {
   font-style: italic;
 }
@@ -210,7 +229,7 @@ p.name {
   Footer
 ***************/
 footer {
-  background-color: $alt-background;
+  background-color: $background-color;
   text-align: center;
 }
 .footer-wrapper {
@@ -240,17 +259,22 @@ img.contact {
 /***************
 MOBILE STYLES
 ***************/
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 60em) {
 
 /***************
 Total Page Rules
 ***************/
-  html,
-  body {
-    margin: 0 auto;
-  }
+html,
+body {
+  font-family: $font-stack;
+  height: 100%;
+  background-color: $background-color;
+  margin: 0 auto;
+}
+
   #content {
     text-align: center;
+    width: 100%;
   }
   p {
     max-width: 480px;
@@ -267,12 +291,6 @@ Total Page Rules
     margin: 0 auto;
   }
 
-/*****************
-Section Alignment
-*****************/
-  #content {
-    text-align: center;
-  }
 
 /***************
    Header
@@ -331,6 +349,14 @@ Section Alignment
     outline: none;
   }
 
+  /*****************
+  Section Alignment
+  *****************/
+  #information {
+    margin: 0 auto;
+    width: 100%;
+  }
+
   /***************
   Intro Section
 ***************/
@@ -356,6 +382,77 @@ Section Alignment
   button.email {
     display: none;
   }
+
+  /***************
+  Services/Philosophy Section
+  ***************/
+  .services, .philosophy {
+    display: block;
+  }
+
+  .info-block, .philosophy-block {
+    width: 100%;
+  }
+  .info-block p {
+    border-bottom: 2px solid $alt-background;
+  }
+  .info-block img {
+    padding-top: 15px;
+  }
+  .philosophy {
+    background-color: $alt-background;
+  }
+  .philHeader {
+    background-color: $alt-background;
+    margin: 0;
+  }
+  .philosophy-block {
+    margin: 0;
+  }
+  .philosophy-block p {
+    border-bottom: 2px solid #f2f2f2;
+  }
+  .philosophy-block img {
+    padding-top: 15px;
+  }
+  .last p {
+    border-bottom: none;
+  }
+
+  /***************
+  Philosophy Section
+  ***************/
+
+
+  /***************
+  Reviews Section
+  ***************/
+  section.reviews {
+    background-color: $background-color;
+  }
+
+  .quoteBlock {
+    width: 100%;
+  }
+
+  p.quote {
+    font-style: italic;
+  }
+  p.name {
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  /***************
+    Footer
+  ***************/
+  footer {
+    background-color: $alt-background;
+    text-align: center;
+  }
+
 }
 
 // * {
