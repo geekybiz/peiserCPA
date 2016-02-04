@@ -224,6 +224,10 @@ section.services {
 /***************
 Philosophy Section
 ***************/
+.philosophy {
+  width: 960px;
+  margin: 0 auto; }
+
 .philosophy-block img {
   padding-top: 15px; }
 
@@ -452,6 +456,12 @@ MOBILE STYLES
 
   .last p {
     border-bottom: none; }
+
+  /***************
+  Philosophy Section
+  ***************/
+  .philosophy {
+    width: inherit; }
 
   /***************
   Reviews Section

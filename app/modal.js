@@ -43,7 +43,7 @@ var modal = (function(){                          // Declare modal object
         width: settings.width || 'auto',           // Set width
         height: settings.height || 'auto'          // Set height
       }).appendTo('body');                         // Add it to the page
-      $('#content').css('opacity', '0.2'); //set background opacity to 0.2
+      $('#page').css('opacity', '0.2'); //set background opacity to 0.2
 
       modal.center();                              // Call center() method
       $(window).on('resize', modal.center);        // Call it if window resized
@@ -54,7 +54,7 @@ var modal = (function(){                          // Declare modal object
         $modal.detach();                           // Remove modal from page
         $overlay.detach();                         // Remove the overlay
         $(window).off('resize', modal.center);     // Remove event handler
-        $('#content').css('opacity', '1'); //set background opacity back to 1
+        $('#page').css('opacity', '1'); //set background opacity back to 1
     }
   };
 }());
