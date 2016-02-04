@@ -514,6 +514,9 @@ MOBILE STYLES
     background-color: #fff;
     text-align: center; } }
 @media only screen and (max-width: 480px) {
+  html, body {
+    margin: 0 auto; }
+
   .intro {
     height: inherit; }
 
