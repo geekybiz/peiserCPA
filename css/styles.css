@@ -309,7 +309,7 @@ img.contact {
 /***************
 MOBILE STYLES
 ***************/
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 960px) {
   /***************
   Total Page Rules
   ***************/
@@ -513,5 +513,28 @@ MOBILE STYLES
   footer {
     background-color: #fff;
     text-align: center; } }
+@media only screen and (max-width: 480px) {
+  .intro {
+    height: inherit; }
+
+  button.contact {
+    margin-bottom: 1em; }
+
+  #logo-mobile a {
+    font-family: "Varela Round", sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: #384047; }
+
+  .nav-item-mobile a {
+    text-decoration: none;
+    color: #384047;
+    font-size: .75em; }
+
+  img.contact {
+    width: 2.5em;
+    height: 2.5em;
+    padding-top: 5px;
+    margin-right: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
