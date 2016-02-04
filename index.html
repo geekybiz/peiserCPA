@@ -14,33 +14,35 @@
       <nav class="desktop">
         <ul class="nav-list">
           <span id="logo"><a href="#">Bob Peiser, CPA</a></span>
-          <li class="nav-item">Services</li>
-          <li class="nav-item">Philosophy</li>
-          <li class="nav-item">Contact</li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#philosophy">Philosophy</a></li>
+          <li class="nav-item"><a href="#services">Services</a></li>
         </ul>
-        <div id="slideIn-desktop">
-          <a href="mailto:bobpeisercpa@gmail.com">
-            <button class="headerButtonDesktop" type="button" name="Contact Us">Contact Us</button>
-          </a>
-        </div>
       </nav>
+      <div class="share">
+        <div id="slideIn-desktop">
+          <button class="headerButtonDesktop" type="button" name="Contact Us">Contact Us</button>
+        </div>
+      </div>
     </header>
     <header2>
       <nav class="mobile">
         <div id="logo-mobile"><a href="#">Bob Peiser, CPA</a></div>
         <ul class="nav-list-mobile">
-          <li class="nav-item-mobile">Services</li>
-          <li class="nav-item-mobile">Philosophy</li>
-          <li class="nav-item-mobile">Contact</li>
+          <li class="nav-item-mobile"><a href="#services">Services</a></li>
+          <li class="nav-item-mobile"><a href="#philosophy">Philosophy</a></li>
+          <li class="nav-item-mobile"><a href="#about">About</a></li>
         </ul>
-        <div id="slideIn-mobile">
-          <a href="tel:479-756-1199">
+        <div class="share">
+          <div id="slideIn-mobile">
             <button class="headerButton" type="button" name="Contact Us">Contact Us</button>
-          </a>
+          </div>
         </div>
       </nav>
     </header2>
     <div id="content">
+      <div id="#" class="section scrollspy">
+      </div>
       <section class="intro">
         <hgroup>
           <h1>Make taxes and administrative processes a breeze.</h1>
@@ -48,14 +50,42 @@
         </hgroup>
 
         <!-- Intro-Buttons -->
-        <a href="tel:479-756-1199">
-          <button class="call" type="button" name="Click to Call">Contact Us</button>
-        </a>
+        <div class="share">
+          <a>
+            <button class="contact" type="button" name="Click to Email">Contact Us</button>
+          </a>
+        </div>
 
-        <a href="mailto:bobpeisercpa@gmail.com">
-          <button class="email" type="button" name="Click to Email">Contact Us</button>
-        </a>
-
+        <!-- MODAL CONTENT -->
+        <div id="contact-options">
+          <p class="modalMessage">Awesome! You're one step closer to business nirvana!
+          </p>
+          <a href="tel:479-756-1199">
+            <div class="modalImage">
+              <img src="images/phone.png" alt="Call Us!" />
+            </div>
+            <p class="modalContact">
+              Phone: 479-756-1199
+            </p>
+          </a>
+          <a href="mailto:bobpeisercpa@gmail.com">
+            <div class="modalImage">
+              <img src="images/Email.png" alt="E-mail Us!" />
+            </div>
+            <p class="modalContact">
+              E-Mail: bobpeisercpa@gmail.com
+            </p>
+            <a href="https://goo.gl/maps/z8hZJLnuxcJ2" target="_blank">
+              <div class="modalImage">
+                <img src="images/small-business.png" alt="Visit Us!" />
+              </div>
+              <p class="modalContact">
+                Address: 1392 Plaza Pl Springdale, AR 72764
+              </p>
+            </a>
+        </div>
+        <div id="services" class="section scrollspy">
+        </div>
       </section>
       <div id="information">
         <h3>Professional Accounting Services</h3>
@@ -104,6 +134,8 @@
               </p>
             </span>
           </div>
+          <div id="philosophy" class="section scrollspy">
+          </div>
         </section>
         <h3 class="philHeader">Honest and Fair Collaboration with Clients</h3>
         <section class="philosophy">
@@ -151,6 +183,21 @@
           </p>
         </div>
       </section>
+      <div id="about">
+      </div>
+      <section class="about">
+        <div class="personalPhoto">
+          <img src="images/bob.jpg" alt="Bob Peiser" />
+        </div>
+          <div class="personalInfo">
+            <p>Bob Peiser was born in Sayville, New York. Growing up, he was an avid runner and went to Bentley College in Massachusetts on a running scholarship to study accounting.</p>
+            <p>After working in New York city he transferred to Dallas, Texas and received his M.B.A at Dallas University. There he met his wife, Alice. In 1989, the family moved to Des Moines, Iowa so Bob could attend law school at Drake University. After
+              graduating he took a position as controller in Lamar, Missouri</p>
+            <p>After nearly 3 years, they moved to Springdale, Arkansas in 1996 where Bob bought into a CPA firm. He has been practicing in the Springdale area ever since. Bob still enjoys running, being very involved at his church, New Heights in Fayetteville,
+            and spending time with his wife, 4 children and 3 (soon 4!) grandchildren.
+            </p>
+          </div>
+      </section>
       <footer>
         <div class="footer-wrapper">
           <div class="date">
@@ -163,11 +210,14 @@
             <a href="mailto:bobpeisercpa@gmail.com">
               <img class="contact" src="images/Email.png" alt="email" />
             </a>
-            <a href="https://www.facebook.com/Bob-Peiser-CPA-Payroll-Tax-Preparation-Bookkeeping-Services-387255728145978/info/?tab=overview">
+            <a href="https://www.facebook.com/Bob-Peiser-CPA-Payroll-Tax-Preparation-Bookkeeping-Services-387255728145978/info/?tab=overview" target="_blank">
               <img class="contact" src="images/Facebook.svg" alt="facebook" />
             </a>
-            <a href="https://www.linkedin.com/in/bob-peiser-08822a87">
+            <a href="https://www.linkedin.com/in/bob-peiser-08822a87" target="_blank">
               <img class="contact" src="images/LinkedIn.svg" alt="linked-in" />
+            </a>
+            <a href="https://goo.gl/maps/z8hZJLnuxcJ2" target="_blank">
+              <img class="contact" src="images/small-business.png" alt="office location" />
             </a>
           </div>
           <div class="icons-link">
@@ -184,6 +234,11 @@
   <script type="text/javascript" src="node_modules/angular/angular.js"></script>
   <script type="text/javascript" src="app/app.js"></script>
   <script type="text/javascript" src="app/mainCtrl.js"></script>
+  <script type="text/javascript" src="app/modal-init.js"></script>
+  <script type="text/javascript" src="app/modal.js"></script>
+
+
+
 </body>
 
 </html>

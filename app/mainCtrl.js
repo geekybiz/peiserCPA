@@ -7,23 +7,21 @@ angular.module('peiserApp')
 
   $(function() {
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 350) {
+      if ($(this).scrollTop() > 300) {
         $('#slideIn-mobile').css('display', 'block');
-        $('ul.nav-list-mobile').hide() && $('#slideIn-mobile').fadeIn(1000);
+        $('#slideIn-mobile').show();
       } else {
-        $('ul.nav-list-mobile').fadeIn(1000) && $('#slideIn-mobile').hide();
+        $('#slideIn-mobile').hide();
       }
     });
 
     $(window).scroll(function(){
       if ($(this).scrollTop() > 350) {
         $('#slideIn-desktop').css('display', 'block');
-        $('#slideIn-desktop').show() && $('li.nav-item').hide();
+        $('#slideIn-desktop').show();
       } else {
-         $('#slideIn-desktop').hide() && $('li.nav-item').show();
+         $('#slideIn-desktop').hide();
       }
     });
-
-
   });
 });

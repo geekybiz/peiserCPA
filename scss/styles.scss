@@ -25,6 +25,66 @@ body {
 }
 
 /***************
+    Modal
+***************/
+.modal {
+  position: absolute;
+  z-index: 1000;
+  background-color: $background-color;
+  border: 2px solid #384047;
+}
+
+.modal-close {
+  background-color: transparent;
+  border: 1px solid #ff1654;
+  width: 16.438em;
+  height: 2.500em;
+  border-radius: .625em;
+  font-size: 1em;
+  color: #ff1654;
+  margin-left: 2.406em;
+  margin-top: .625em;
+}
+
+.modal-close:hover,
+.modal-close:active {
+  background-color: #ff1654;
+  color: $background-color;
+}
+.modal-close:focus {
+  outline: none;
+}
+
+#contact-options {
+  p.modalMessage {
+    margin-top: .313em;
+    padding: 0 .313em 0 .313em;
+    margin-bottom: .313em;
+  }
+  p, img {
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+  }
+  img {
+    height: 3.125em;
+    width: 3.125em;
+    padding-top: .250em;
+  }
+  .modalImage {
+    text-align: center;
+  }
+  p.modalContact {
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: .313em;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+/***************
    Font rules
 ***************/
 h1,
@@ -34,10 +94,10 @@ h4 {
   color: $heading-color;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 h3 {
   font-size: 1.5em;
@@ -53,7 +113,7 @@ h4 {
 p {
   font-size: 1em;
   color: $font-color;
-  padding: 0 10px 20px;
+  padding: 0 .625em 1.250em;
 }
 #logo a {
   font-family: $title-font;
@@ -110,7 +170,7 @@ nav.mobile {
   margin-left: 40px;
   padding-top: 10px;
 }
-#logo a:visited {
+#logo a, .nav-item a:visited {
   color: $heading-color;
 }
 .nav-item {
@@ -118,11 +178,12 @@ nav.mobile {
   margin-right: 40px;
   padding-top: 30px;
 }
+.nav-item a {
+  text-decoration: none;
+}
 #slideIn-desktop {
   display: none;
   text-align: center;
-  float: right;
-  margin-right: 40px;
 }
 button.headerButtonDesktop {
   background-color: transparent;
@@ -132,7 +193,7 @@ button.headerButtonDesktop {
   border-radius: 10px;
   font-size: 1em;
   color: $intro-color;
-  margin-top: 10px;
+  margin-top: -.313em;
 }
 button.headerButtonDesktop:hover,
 button.headerButton:active {
@@ -148,7 +209,7 @@ button.headerButtonDesktop:focus {
 ***************/
 .intro {
   background-color: $intro-color;
-  height: 23em;
+  height: 20.5em;
   padding-top: 5em;
   text-align: center;
 }
@@ -159,8 +220,8 @@ hgroup > h1,
 h2 {
   color: $background-color;
 }
-button.email {
-  margin-top: 5%;
+button.contact {
+  margin-top: 3%;
   width: 263px;
   height: 52px;
   border-radius: 10px;
@@ -170,17 +231,15 @@ button.email {
   color: $intro-color;
   display: inline-block;
 }
-button.email:hover,
-button.email:active {
+button.contact:hover,
+button.contact:active {
   background-color: $alt-background;
   color: $intro-color;
 }
-button.email:focus {
+button.contact:focus {
   outline: none;
 }
-button.call {
-  display: none;
-}
+
 
 /***************
 Services Section
@@ -226,10 +285,39 @@ p.name {
 }
 
 /***************
+  About Section
+***************/
+.about {
+  width: 60em;
+  height: 18.75em;
+  margin: 0 auto;
+}
+
+.personalPhoto > img {
+  float: left;
+  margin-right: 20px;
+  padding-right: 10px;
+  padding-top: 7px;
+  border-radius: 50%;
+  width: 250px;
+}
+
+.personalInfo {
+  padding: 15px 0 0 0;
+}
+
+.personalInfo > p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+
+/***************
   Footer
 ***************/
 footer {
-  background-color: $background-color;
+  background-color: $alt-background;
   text-align: center;
 }
 .footer-wrapper {
@@ -270,6 +358,18 @@ body {
   height: 100%;
   background-color: $background-color;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+hgroup {
+  padding: 20px;
+
 }
 
   #content {
@@ -323,6 +423,12 @@ body {
     font-size: 3em;
     text-decoration: none;
   }
+.nav-item-mobile a {
+  text-decoration: none;
+}
+.nav-item-mobile a:visited {
+    color: $heading-color;
+  }
   #logo-mobile a:visited {
     color: $heading-color;
   }
@@ -357,31 +463,15 @@ body {
     width: 100%;
   }
 
-  /***************
+/***************
   Intro Section
 ***************/
-  button.call {
-    margin-top: 5%;
-    width: 263px;
-    height: 52px;
-    border-radius: 10px;
-    background-color: $background-color;
-    border: 1px solid #118c4e;
-    font-size: 1em;
-    color: $intro-color;
-    display: inline-block;
-  }
-  button.call:hover,
-  button.call:active {
-    background-color: $alt-background;
-    color: $intro-color;
-  }
-  button.call:focus {
-    outline: none;
-  }
-  button.email {
-    display: none;
-  }
+.intro {
+  background-color: $intro-color;
+  height: 24em;
+  padding-top: 5em;
+  text-align: center;
+}
 
   /***************
   Services/Philosophy Section
@@ -420,11 +510,6 @@ body {
   }
 
   /***************
-  Philosophy Section
-  ***************/
-
-
-  /***************
   Reviews Section
   ***************/
   section.reviews {
@@ -446,10 +531,36 @@ body {
   }
 
   /***************
+    About Section
+  ***************/
+  .about {
+    background-color: $alt-background;
+    height: 39.063em;
+    margin: 0 auto;
+  }
+
+  .personalPhoto > img {
+    float: none;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .personalInfo > p {
+    display: block;
+    padding-top: 15px;
+    max-width: 480px;
+    text-align: left;
+  }
+
+
+  /***************
     Footer
   ***************/
   footer {
-    background-color: $alt-background;
+    background-color: $background-color;
     text-align: center;
   }
 
