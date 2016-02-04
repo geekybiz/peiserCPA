@@ -179,6 +179,7 @@ nav.mobile {
 }
 .nav-item a {
   text-decoration: none;
+  color: $heading-color;
 }
 #slideIn-desktop {
   display: none;
@@ -425,9 +426,11 @@ hgroup {
     font-family: $title-font;
     font-size: 3em;
     text-decoration: none;
+    color: $heading-color;
   }
 .nav-item-mobile a {
   text-decoration: none;
+  color: $heading-color;
 }
 .nav-item-mobile a:visited {
     color: $heading-color;

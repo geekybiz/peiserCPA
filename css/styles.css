@@ -150,7 +150,8 @@ nav.mobile {
   padding-top: 30px; }
 
 .nav-item a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #384047; }
 
 #slideIn-desktop {
   display: none;
@@ -374,10 +375,12 @@ MOBILE STYLES
   #logo-mobile a {
     font-family: "Varela Round", sans-serif;
     font-size: 3em;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #384047; }
 
   .nav-item-mobile a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #384047; }
 
   .nav-item-mobile a:visited {
     color: #384047; }
