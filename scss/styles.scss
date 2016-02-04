@@ -141,7 +141,6 @@ Section Alignment
   text-align: center;
 }
 
-
 /***************
    Header
 ***************/
@@ -351,7 +350,8 @@ img.contact {
 /***************
 MOBILE STYLES
 ***************/
-@media only screen and (max-width: 60em) {
+
+@media only screen and (max-width: 960px) {
 
 /***************
 Total Page Rules
@@ -577,9 +577,32 @@ hgroup {
     background-color: $background-color;
     text-align: center;
   }
-
 }
 
-// * {
-//   border: 1px solid red;
-// }
+@media only screen and (max-width: 480px) {
+
+  .intro {
+    height: inherit;
+  }
+  button.contact {
+    margin-bottom: 1em;
+  }
+
+  #logo-mobile a {
+    font-family: $title-font;
+    font-size: 2em;
+    text-decoration: none;
+    color: $heading-color;
+  }
+  .nav-item-mobile a {
+    text-decoration: none;
+    color: $heading-color;
+    font-size: .75em;
+  }
+  img.contact {
+    width: 2.5em;
+    height: 2.5em;
+    padding-top: 5px;
+    margin-right: 20px;
+}
+}
