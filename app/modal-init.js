@@ -5,7 +5,7 @@
     modal.open({
       content: $content,
       width: 340,
-      height: 380
+      height: 400
     });
   });
 }());
