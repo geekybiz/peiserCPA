@@ -14,7 +14,7 @@ body {
   background-color: #fff;
   margin: 0px;
   padding: 0px;
-  overflow-x: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch; }
 
 /***************
