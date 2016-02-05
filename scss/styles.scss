@@ -208,7 +208,7 @@ button.headerButtonDesktop:focus {
 ***************/
 .intro {
   background-color: $intro-color;
-  height: 20.5em;
+  height: inherit;
   padding-top: 5em;
   text-align: center;
 }
@@ -220,7 +220,6 @@ h2 {
   color: $background-color;
 }
 button.contact {
-  margin-top: 3%;
   width: 263px;
   height: 52px;
   border-radius: 10px;
@@ -229,6 +228,7 @@ button.contact {
   font-size: 1em;
   color: $intro-color;
   display: inline-block;
+  margin-bottom: 4%;
 }
 button.contact:hover,
 button.contact:active {
@@ -474,9 +474,13 @@ hgroup {
 ***************/
 .intro {
   background-color: $intro-color;
-  height: 24em;
+  height: inherit;
   padding-top: 5em;
   text-align: center;
+}
+
+button.contact {
+  margin-bottom: 6%;
 }
 
   /***************
@@ -603,7 +607,7 @@ hgroup {
   .nav-item-mobile a {
     text-decoration: none;
     color: $heading-color;
-    font-size: .75em;
+    font-size: .9em;
   }
   img.contact {
     width: 2.5em;

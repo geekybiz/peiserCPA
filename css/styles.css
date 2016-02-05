@@ -180,7 +180,7 @@ button.headerButtonDesktop:focus {
 ***************/
 .intro {
   background-color: #5fcf80;
-  height: 20.5em;
+  height: inherit;
   padding-top: 5em;
   text-align: center; }
 
@@ -192,7 +192,6 @@ h2 {
   color: #fff; }
 
 button.contact {
-  margin-top: 3%;
   width: 263px;
   height: 52px;
   border-radius: 10px;
@@ -200,7 +199,8 @@ button.contact {
   border: 1px solid #118c4e;
   font-size: 1em;
   color: #5fcf80;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 4%; }
 
 button.contact:hover,
 button.contact:active {
@@ -422,9 +422,12 @@ MOBILE STYLES
   ***************/
   .intro {
     background-color: #5fcf80;
-    height: 24em;
+    height: inherit;
     padding-top: 5em;
     text-align: center; }
+
+  button.contact {
+    margin-bottom: 6%; }
 
   /***************
   Services/Philosophy Section
@@ -535,7 +538,7 @@ MOBILE STYLES
   .nav-item-mobile a {
     text-decoration: none;
     color: #384047;
-    font-size: .75em; }
+    font-size: .9em; }
 
   img.contact {
     width: 2.5em;
