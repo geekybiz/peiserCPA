@@ -23,7 +23,7 @@ body {
   background-color: $background-color;
   margin: 0px;
   padding: 0px;
-  -webkit-overflow-x: hidden;
+  overflow: hidden;
 }
 
 
@@ -609,8 +609,11 @@ button.contact {
   .nav-item-mobile a {
     text-decoration: none;
     color: $heading-color;
-    font-size: .9em;
-    -webkit-font-size: .9em;
+    font-size: .8em;
+    -webkit-font-size: .8em;
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
   }
   img.contact {
     width: 2.5em;
