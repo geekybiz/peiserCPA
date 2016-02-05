@@ -14,7 +14,7 @@ body {
   background-color: #fff;
   margin: 0px;
   padding: 0px;
-  -webkit-overflow-x: hidden; }
+  overflow: hidden; }
 
 /***************
     Modal
@@ -539,8 +539,11 @@ MOBILE STYLES
   .nav-item-mobile a {
     text-decoration: none;
     color: #384047;
-    font-size: .9em;
-    -webkit-font-size: .9em; }
+    font-size: .8em;
+    -webkit-font-size: .8em;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; }
 
   img.contact {
     width: 2.5em;
