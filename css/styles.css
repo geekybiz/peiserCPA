@@ -539,10 +539,7 @@ MOBILE STYLES
     text-decoration: none;
     color: #384047;
     font-size: .8em;
-    -webkit-font-size: .8em;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%; }
+    -webkit-font-size: .8em; }
 
   img.contact {
     width: 2.5em;
