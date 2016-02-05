@@ -7,7 +7,7 @@ angular.module('peiserApp')
 
   $scope.businessYears = $scope.year - 1993;
 
-  $(function() {
+  $(document).ready(function() {
     $(window).scroll(function(){
       if ($(this).scrollTop() > 300) {
         $('#slideIn-mobile').css('display', 'block');
