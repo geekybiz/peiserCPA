@@ -13,9 +13,7 @@ body {
   height: 100%;
   background-color: #fff;
   margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch; }
+  padding: 0px; }
 
 /***************
     Modal
@@ -524,6 +522,10 @@ MOBILE STYLES
 @media only screen and (max-width: 480px) {
   html, body {
     margin: 0 auto; }
+
+  .intro, .about, .philosophy-block {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; }
 
   .intro {
     height: inherit; }
