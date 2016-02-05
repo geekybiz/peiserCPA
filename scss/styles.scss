@@ -23,6 +23,10 @@ body {
   margin: 0 auto;
 }
 
+section {
+  width: 100%;
+}
+
 /***************
     Modal
 ***************/
@@ -584,9 +588,6 @@ button.contact {
 }
 
 @media only screen and (max-width: 480px) {
-  #page {
-    margin: 0 auto;
-  }
   html, body {
     margin: 0 auto;
   }
