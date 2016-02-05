@@ -590,11 +590,9 @@ button.contact {
 @media only screen and (max-width: 480px) {
   html, body {
     margin: 0 auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
-.intro, .about, .philosophy-block {
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
   .intro {
     height: inherit;
   }
