@@ -23,8 +23,6 @@ body {
   background-color: $background-color;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 
@@ -593,7 +591,10 @@ button.contact {
   html, body {
     margin: 0 auto;
   }
-
+.intro, .about, .philosophy-block {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
   .intro {
     height: inherit;
   }
