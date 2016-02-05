@@ -521,10 +521,7 @@ MOBILE STYLES
     text-align: center; } }
 @media only screen and (max-width: 480px) {
   html, body {
-    width: 100%;
-    margin: 0 auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch; }
+    margin: 0 auto; }
 
   .intro {
     height: inherit; }
