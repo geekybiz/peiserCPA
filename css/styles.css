@@ -13,10 +13,8 @@ body {
   height: 100%;
   background-color: #fff;
   margin: 0px;
-  padding: 0px; }
-
-* {
-  -webkit-overflow-scrolling: touch; }
+  padding: 0px;
+  -webkit-overflow-x: hidden; }
 
 /***************
     Modal
@@ -25,7 +23,8 @@ body {
   position: absolute;
   z-index: 1000;
   background-color: #fff;
-  border: 2px solid #384047; }
+  border: 2px solid #384047;
+  overflow: scroll; }
 
 .modal-close {
   background-color: transparent;
@@ -36,7 +35,7 @@ body {
   font-size: 1em;
   color: #ff1654;
   margin-left: 2.406em;
-  margin-top: .625em; }
+  margin-top: 1.5em; }
 
 .modal-close:hover,
 .modal-close:active {
@@ -540,15 +539,13 @@ MOBILE STYLES
   .nav-item-mobile a {
     text-decoration: none;
     color: #384047;
-    font-size: .9em; }
+    font-size: .9em;
+    -webkit-font-size: .9em; }
 
   img.contact {
     width: 2.5em;
     height: 2.5em;
     padding-top: 5px;
-    margin-right: 20px; }
-
-  .modal-close {
-    margin-top: 0; } }
+    margin-right: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
