@@ -5,7 +5,7 @@ angular.module('peiserApp')
 
   $scope.year = date.getFullYear();
 
-  $scope.businessYears = $scope.year - 1993;
+  $scope.businessYears = $scope.year - 1996;
 
   $(document).ready(function() {
     $(window).scroll(function(){
