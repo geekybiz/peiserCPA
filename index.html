@@ -209,11 +209,12 @@
           <img src="images/bob.jpg" alt="Bob Peiser" />
         </div>
         <div class="personalInfo">
-          <p>Bob Peiser was born in Sayville, New York. Growing up, he was an avid runner and went to Bentley College in Massachusetts on a running scholarship to study accounting.  He obtained his CPA license in 1982, and he has been an accounting professional ever since.</p>
+          <p>Bob Peiser was born in Sayville, New York. Growing up, he was an avid runner and went to Bentley College in Massachusetts on a running scholarship to study accounting. He obtained his CPA license in 1982, and he has been an accounting professional
+            ever since.</p>
           <p>After working in New York City, he transferred to Dallas, Texas and received his M.B.A at Dallas University. There he met his wife, Alice. In 1989, the family moved to Des Moines, Iowa so Bob could attend law school at Drake University. After
             graduating he took a position as controller in Lamar, Missouri.</p>
-          <p>After nearly 3 years, they moved to Springdale, Arkansas in 1996 where Bob became a partner in a local CPA firm. He has been practicing in the Springdale area ever since. Bob still enjoys running, being very involved at his church, New Heights in Fayetteville,
-            and spending time with his wife, 4 children and 3 (soon 4!) grandchildren.
+          <p>After nearly 3 years, they moved to Springdale, Arkansas in 1996 where Bob became a partner in a local CPA firm. He has been practicing in the Springdale area ever since. Bob still enjoys running, being very involved at his church, New Heights
+            in Fayetteville, and spending time with his wife, 4 children and 3 (soon 4!) grandchildren.
           </p>
         </div>
       </section>
@@ -240,18 +241,34 @@
             <img class="contact" src="images/small-business.png" alt="office location" />
           </a>
         </div>
-          <div class="icons-link">
-            <a href="https://icons8.com/" target="_blank">Icons provided by <span class="icons">Icons8</span></a>
-          </div>
-          <div class="developer">
-              <a href="http://www.nathanallen.info/#/" target="_blank">Web design and development provided by <span class="icons">Nathan Allen</span></a>
-          </div>
+        <div class="icons-link">
+          <a href="https://icons8.com/" target="_blank">Icons provided by <span class="icons">Icons8</span></a>
+        </div>
+        <div class="developer">
+          <a href="http://www.nathanallen.info/#/" target="_blank">Web design and development provided by <span class="icons">Nathan Allen</span></a>
+        </div>
     </footer>
     </div>
   </div>
   </div>
 
+
+
   <!-- Scripts -->
+  <script type="text/javascript">
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "mainCtrl.js";
+      element.src2 = "modal-init.min.js";
+      element.src3 = "modal.min.js";
+      document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" defer></script>
   <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
   <script type="text/javascript" src="app/app.js" defer></script>
