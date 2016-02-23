@@ -1,24 +1,148 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Roboto);@import url(https://fonts.googleapis.com/css?family=Varela+Round);html,
+body{font-family:Roboto, sans-serif;width:100%;height:100%;background-color:#fff;margin:0 auto;padding:0px;}
+.modal{position:absolute;z-index:1000;background-color:#fff;border:2px solid #384047;overflow:scroll;}
+.modal-close{background-color:transparent;border:1px solid #ff1654;width:16.438em;height:2.500em;border-radius:.625em;font-size:1em;color:#ff1654;margin-left:2.406em;margin-top:1.5em;}
+.modal-close:hover,
+.modal-close:active{background-color:#ff1654;color:#fff;}
+.modal-close:focus{outline:none;}
+#contact-options p.modalMessage{margin-top:.313em;padding:0 .313em 0 .313em;margin-bottom:.313em;}
+#contact-options p, #contact-options img{text-align:center;padding:0;text-decoration:none;}
+#contact-options img{height:3.125em;width:3.125em;padding-top:.250em;}
+#contact-options .modalImage{text-align:center;}
+#contact-options p.modalContact{margin-top:0px;font-weight:bold;margin-bottom:.313em;}
+#contact-options a{text-decoration:none;}
+h1,
+h2,
+h3,
+h4{color:#384047;}
+h1{font-size:2.5em;}
+h2{font-size:2em;}
+h3{font-size:1.5em;padding:20px 0;text-align:center;}
+h4{font-size:1.125em;margin-top:0;padding-top:10px;}
+p{font-size:1em;color:#576366;padding:0 .625em 1.250em;}
+#logo a{font-family:"Varela Round", sans-serif;font-size:2.5em;text-decoration:none;}
+#information{width:60em;margin:0 auto;}
+.services, .philosophy{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-around;}
+.info-block, .philosophy-block{width:300px;margin:10px;text-align:center;}
+header{position:fixed;background-color:#fff;z-index:10;width:100%;border-bottom:1px solid #f4f7f8;height:4.5em;}
+nav.mobile{display:none;}
+.nav-list{display:inline;list-style:none;}
+#logo{float:left;margin-left:40px;padding-top:10px;}
+#logo a, .nav-item a:visited{color:#384047;}
+.nav-item{float:right;margin-right:40px;padding-top:30px;}
+.nav-item a{text-decoration:none;color:#384047;}
+#slideIn-desktop{display:none;text-align:center;}
+button.headerButtonDesktop{background-color:transparent;border:1px solid #5fcf80;width:263px;height:52px;border-radius:10px;font-size:1em;color:#5fcf80;margin-top:-.313em;}
+button.headerButtonDesktop:hover,
+button.headerButton:active{background-color:#5fcf80;color:#fff;}
+button.headerButtonDesktop:focus{outline:none;}
+.intro{background-color:#5fcf80;height:inherit;padding-top:5em;text-align:center;}
+hgroup{padding:20px;}
+hgroup > h1,
+h2{color:#fff;}
+button.contact{width:263px;height:52px;border-radius:10px;background-color:#fff;border:1px solid #118c4e;font-size:1em;color:#5fcf80;display:inline-block;margin-bottom:4%;}
+button.contact:hover,
+button.contact:active{background-color:#f4f7f8;color:#5fcf80;}
+button.contact:focus{outline:none;}
+section.services{border-bottom:2px solid #f4f7f8;}
+.info-block img{padding-top:15px;}
+.info-block-last p{border-bottom:none;}
+.philosophy{width:960px;margin:0 auto;}
+.philosophy-block img{padding-top:15px;}
+section.reviews{background-color:#f4f7f8;margin:0;}
+.quoteBlock{max-width:60em;text-align:center;margin:0 auto;}
+p.quote{font-style:italic;}
+p.name{font-weight:bold;margin:0;text-align:left;padding-left:10px;}
+.about{width:60em;height:18.75em;margin:0 auto;}
+.personalPhoto > img{float:left;margin-right:20px;padding-right:10px;padding-top:7px;border-radius:50%;width:250px;}
+.personalInfo{padding:15px 0 0 0;}
+.personalInfo > p{margin-bottom:0;padding-bottom:0;}
+footer{background-color:#f4f7f8;text-align:center;}
+.footer-wrapper{top:0.5em;}
+.date.ng-binding{padding-top:10px;}
+img.contact{width:3em;height:3em;padding-top:5px;margin-right:20px;}
+.icons-link a{font-size:0.75em;color:#576366;text-decoration:none;}
+.icons-link a:visited{color:#576366;}
+.icons{color:#5fcf80;}
+@media only screen and (max-width:960px){html,
+body{font-family:Roboto, sans-serif;height:100%;background-color:#fff;}
+h1{font-size:2em;}
+h2{font-size:1.5em;}
+hgroup{padding:20px;}
+#content{text-align:center;width:100%;}
+p{max-width:480px;margin:0 auto;}
+h3{font-size:1.5em;padding:20px 0;}
+p.name{font-weight:bold;text-align:center;max-width:480px;margin:0 auto;}
+header2{position:fixed;background-color:#fff;z-index:10;width:100%;border-bottom:1px solid #f4f7f8;}
+nav.desktop{display:none;}
+nav.mobile{display:block;text-align:center;}
+.nav-item-mobile{display:inline;margin-right:2em;list-style:none;}
+#logo-mobile a{font-family:"Varela Round", sans-serif;font-size:3em;text-decoration:none;color:#384047;}
+.nav-item-mobile a{text-decoration:none;color:#384047;}
+.nav-item-mobile a:visited{color:#384047;}
+#logo-mobile a:visited{color:#384047;}
+#slideIn-mobile{display:none;}
+button.headerButton{background-color:transparent;border:1px solid #5fcf80;width:263px;height:52px;border-radius:10px;font-size:1em;color:#5fcf80;margin-top:5px;margin-bottom:10px;}
+button.headerButton:hover,
+button.headerButton:active{background-color:#5fcf80;color:#fff;}
+button.headerButton:focus{outline:none;}
+#information{width:100%;}
+.intro{background-color:#5fcf80;height:inherit;padding-top:5em;text-align:center;}
+button.contact{margin-bottom:6%;}
+.services, .philosophy{display:block;}
+.info-block, .philosophy-block{width:100%;}
+.info-block p{border-bottom:2px solid #f4f7f8;}
+.info-block img{padding-top:15px;}
+.philosophy{background-color:#f4f7f8;}
+.philHeader{background-color:#f4f7f8;margin:0;}
+.philosophy-block{margin:0;}
+.philosophy-block p{border-bottom:2px solid #f2f2f2;}
+.philosophy-block img{padding-top:15px;}
+.last p{border-bottom:none;}
+.philosophy{width:inherit;}
+section.reviews{background-color:#fff;}
+.quoteBlock{width:100%;}
+p.quote{font-style:italic;}
+p.name{font-weight:bold;margin:0;text-align:left;padding-left:10px;}
+.about{width:inherit;background-color:#f4f7f8;height:inherit;margin:0 auto;}
+.personalPhoto > img{float:none;display:block;border-radius:50%;width:250px;margin:0 auto;}
+.personalInfo > p{display:block;padding-top:15px;padding-bottom:5px;max-width:480px;text-align:left;}
+footer{background-color:#fff;text-align:center;}
+}
+@media only screen and (max-width:480px){.intro{height:inherit;}
+button.contact{margin-bottom:1em;}
+#logo-mobile a{font-family:"Varela Round", sans-serif;font-size:2em;text-decoration:none;color:#384047;}
+.nav-item-mobile a{text-decoration:none;color:#384047;font-size:.8em;-webkit-font-size:.8em;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+img.contact{width:2.5em;height:2.5em;padding-top:5px;margin-right:20px;}
+}
+
+
+
+/*******************
+ Non-minimized code
+********************/
+
+/*@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);*/
 /***************
    Sass Variables
 ***************/
 /***************
 Total Page Rules
 ***************/
-html,
+/*html,
 body {
   font-family: Roboto, sans-serif;
   width: 100%;
   height: 100%;
   background-color: #fff;
   margin: 0 auto;
-  padding: 0px; }
+  padding: 0px; }*/
 
 /***************
     Modal
 ***************/
-.modal {
+/*.modal {
   position: absolute;
   z-index: 1000;
   background-color: #fff;
@@ -63,12 +187,12 @@ body {
   font-weight: bold;
   margin-bottom: .313em; }
 #contact-options a {
-  text-decoration: none; }
+  text-decoration: none; }*/
 
 /***************
    Font rules
 ***************/
-h1,
+/*h1,
 h2,
 h3,
 h4 {
@@ -98,12 +222,12 @@ p {
 #logo a {
   font-family: "Varela Round", sans-serif;
   font-size: 2.5em;
-  text-decoration: none; }
+  text-decoration: none; }*/
 
 /*****************
 Section Alignment
 *****************/
-#information {
+/*#information {
   width: 60em;
   margin: 0 auto; }
 
@@ -116,23 +240,23 @@ Section Alignment
 .info-block, .philosophy-block {
   width: 300px;
   margin: 10px;
-  text-align: center; }
+  text-align: center; }*/
 
 /***************
    Header
 ***************/
-header {
+/*header {
   position: fixed;
   background-color: #fff;
   z-index: 10;
   width: 100%;
   border-bottom: 1px solid #f4f7f8;
-  height: 4.5em; }
+  height: 4.5em; }*/
 
 /***************
    Navigation
 ***************/
-nav.mobile {
+/*nav.mobile {
   display: none; }
 
 .nav-list {
@@ -176,12 +300,12 @@ button.headerButton:active {
   color: #fff; }
 
 button.headerButtonDesktop:focus {
-  outline: none; }
+  outline: none; }*/
 
 /***************
   Intro Section
 ***************/
-.intro {
+/*.intro {
   background-color: #5fcf80;
   height: inherit;
   padding-top: 5em;
@@ -211,34 +335,34 @@ button.contact:active {
   color: #5fcf80; }
 
 button.contact:focus {
-  outline: none; }
+  outline: none; }*/
 
 /***************
 Services Section
 ***************/
-section.services {
+/*section.services {
   border-bottom: 2px solid #f4f7f8; }
 
 .info-block img {
   padding-top: 15px; }
 
 .info-block-last p {
-  border-bottom: none; }
+  border-bottom: none; }*/
 
 /***************
 Philosophy Section
 ***************/
-.philosophy {
+/*.philosophy {
   width: 960px;
   margin: 0 auto; }
 
 .philosophy-block img {
-  padding-top: 15px; }
+  padding-top: 15px; }*/
 
 /***************
 Reviews Section
 ***************/
-section.reviews {
+/*section.reviews {
   background-color: #f4f7f8;
   margin: 0; }
 
@@ -254,12 +378,12 @@ p.name {
   font-weight: bold;
   margin: 0;
   text-align: left;
-  padding-left: 10px; }
+  padding-left: 10px; }*/
 
 /***************
   About Section
 ***************/
-.about {
+/*.about {
   width: 60em;
   height: 18.75em;
   margin: 0 auto; }
@@ -277,12 +401,12 @@ p.name {
 
 .personalInfo > p {
   margin-bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0; }*/
 
 /***************
   Footer
 ***************/
-footer {
+/*footer {
   background-color: #f4f7f8;
   text-align: center; }
 
@@ -307,16 +431,16 @@ img.contact {
   color: #576366; }
 
 .icons {
-  color: #5fcf80; }
+  color: #5fcf80; }*/
 
 /***************
 MOBILE STYLES
 ***************/
-@media only screen and (max-width: 960px) {
+/*@media only screen and (max-width: 960px) {*/
   /***************
   Total Page Rules
   ***************/
-  html,
+  /*html,
   body {
     font-family: Roboto, sans-serif;
     height: 100%;
@@ -348,22 +472,22 @@ MOBILE STYLES
     font-weight: bold;
     text-align: center;
     max-width: 480px;
-    margin: 0 auto; }
+    margin: 0 auto; }*/
 
   /***************
      Header
   ***************/
-  header2 {
+  /*header2 {
     position: fixed;
     background-color: #fff;
     z-index: 10;
     width: 100%;
-    border-bottom: 1px solid #f4f7f8; }
+    border-bottom: 1px solid #f4f7f8; }*/
 
   /***************
      Navigation
   ***************/
-  nav.desktop {
+  /*nav.desktop {
     display: none; }
 
   nav.mobile {
@@ -411,30 +535,30 @@ MOBILE STYLES
     color: #fff; }
 
   button.headerButton:focus {
-    outline: none; }
+    outline: none; }*/
 
   /*****************
   Section Alignment
   *****************/
-  #information {
-    width: 100%; }
+  /*#information {
+    width: 100%; }*/
 
   /***************
     Intro Section
   ***************/
-  .intro {
+  /*.intro {
     background-color: #5fcf80;
     height: inherit;
     padding-top: 5em;
     text-align: center; }
 
   button.contact {
-    margin-bottom: 6%; }
+    margin-bottom: 6%; }*/
 
   /***************
   Services/Philosophy Section
   ***************/
-  .services, .philosophy {
+  /*.services, .philosophy {
     display: block; }
 
   .info-block, .philosophy-block {
@@ -463,18 +587,18 @@ MOBILE STYLES
     padding-top: 15px; }
 
   .last p {
-    border-bottom: none; }
+    border-bottom: none; }*/
 
   /***************
   Philosophy Section
   ***************/
-  .philosophy {
-    width: inherit; }
+  /*.philosophy {
+    width: inherit; }*/
 
   /***************
   Reviews Section
   ***************/
-  section.reviews {
+  /*section.reviews {
     background-color: #fff; }
 
   .quoteBlock {
@@ -487,12 +611,12 @@ MOBILE STYLES
     font-weight: bold;
     margin: 0;
     text-align: left;
-    padding-left: 10px; }
+    padding-left: 10px; }*/
 
   /***************
     About Section
   ***************/
-  .about {
+  /*.about {
     width: inherit;
     background-color: #f4f7f8;
     height: inherit;
@@ -510,12 +634,12 @@ MOBILE STYLES
     padding-top: 15px;
     padding-bottom: 5px;
     max-width: 480px;
-    text-align: left; }
+    text-align: left; }*/
 
   /***************
     Footer
   ***************/
-  footer {
+  /*footer {
     background-color: #fff;
     text-align: center; } }
 @media only screen and (max-width: 480px) {
@@ -544,6 +668,6 @@ MOBILE STYLES
     width: 2.5em;
     height: 2.5em;
     padding-top: 5px;
-    margin-right: 20px; } }
+    margin-right: 20px; } }*/
 
 /*# sourceMappingURL=styles.css.map */
