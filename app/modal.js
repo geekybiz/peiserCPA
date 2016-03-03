@@ -1,3 +1,4 @@
+
 var modal = (function(){                          // Declare modal object
 
   var $modal = $('<div class="modal"/>'),         // Create markup for modal

@@ -1,3 +1,4 @@
+
 (function() {
   var $content = $('#contact-options').detach(); // Remove modal from page
 
