@@ -2,6 +2,7 @@
 <html ng-app="peiserApp">
 
 <head>
+  <meta name="fragment" content="!">
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
   <meta name='description' content="Tax return, tax consulting, monthly bookkeeping, payroll, sales tax, and contractors' license report services provided by an experienced accounting professional serving the Northwest AR area including Springdale, Fayetteville, Rogers, and Bentonville.">
@@ -30,13 +31,44 @@
 
 <body ng-controller="mainCtrl">
   <div id="page">
+
+    <!-- MODAL CONTENT -->
+    <div id="contact-options">
+      <p class="modalMessage">Awesome! You're one step closer to business nirvana!
+      </p>
+      <a href="tel:479-756-1199">
+        <div class="modalImage">
+          <img src="images/phone.png" alt="Call Us!" />
+        </div>
+        <p class="modalContact">
+          Phone: 479-756-1199
+        </p>
+      </a>
+      <a href="mailto:bobpeisercpa@gmail.com">
+        <div class="modalImage">
+          <img src="images/Email.png" alt="E-mail Us!" />
+        </div>
+        <p class="modalContact">
+          E-Mail: bobpeisercpa@gmail.com
+        </p>
+        <a href="https://goo.gl/maps/z8hZJLnuxcJ2" target="_blank">
+          <div class="modalImage">
+            <img src="images/small-business.png" alt="Visit Us!" />
+          </div>
+          <p class="modalContact">
+            Address: 1392 Plaza Pl Springdale, AR 72764
+          </p>
+        </a>
+    </div>
     <header>
       <nav class="desktop">
         <ul class="nav-list">
           <span id="logo"><a href="#">Bob Peiser, CPA</a></span>
           <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#reviews">Reviews</a></li>
           <li class="nav-item"><a href="#philosophy">Philosophy</a></li>
           <li class="nav-item"><a href="#services">Services</a></li>
+
         </ul>
       </nav>
       <div class="share">
@@ -51,6 +83,7 @@
         <ul class="nav-list-mobile">
           <li class="nav-item-mobile"><a href="#services">Services</a></li>
           <li class="nav-item-mobile"><a href="#philosophy">Philosophy</a></li>
+          <li class="nav-item-mobile"><a href="#reviews">Reviews</a></li>
           <li class="nav-item-mobile"><a href="#about">About</a></li>
         </ul>
         <div class="share">
@@ -61,130 +94,99 @@
       </nav>
     </header2>
     <div id="content">
-      <div id="#" class="section scrollspy">
-      </div>
-      <section class="intro">
-        <hgroup>
-          <h1>Make taxes and administrative processes a breeze.</h1>
-          <h2>Let us help manage your books and file your tax returns. </h2>
-        </hgroup>
+      <div id="#" class="remove-hash">
+        <section class="intro">
+          <hgroup>
+            <h1>Make taxes and administrative processes a breeze.</h1>
+            <h2>Let us help manage your books and file your tax returns. </h2>
+          </hgroup>
 
-        <!-- Intro-Buttons -->
-        <div class="share">
-          <a>
-            <button class="contact" type="button" name="Click to Email">Contact Us</button>
-          </a>
-        </div>
-
-        <!-- MODAL CONTENT -->
-        <div id="contact-options">
-          <p class="modalMessage">Awesome! You're one step closer to business nirvana!
-          </p>
-          <a href="tel:479-756-1199">
-            <div class="modalImage">
-              <img src="images/phone.png" alt="Call Us!" />
-            </div>
-            <p class="modalContact">
-              Phone: 479-756-1199
-            </p>
-          </a>
-          <a href="mailto:bobpeisercpa@gmail.com">
-            <div class="modalImage">
-              <img src="images/Email.png" alt="E-mail Us!" />
-            </div>
-            <p class="modalContact">
-              E-Mail: bobpeisercpa@gmail.com
-            </p>
-            <a href="https://goo.gl/maps/z8hZJLnuxcJ2" target="_blank">
-              <div class="modalImage">
-                <img src="images/small-business.png" alt="Visit Us!" />
-              </div>
-              <p class="modalContact">
-                Address: 1392 Plaza Pl Springdale, AR 72764
-              </p>
+          <!-- Intro-Buttons -->
+          <div class="share">
+            <a>
+              <button class="contact" type="button" name="Click to Email">Contact Us</button>
             </a>
-        </div>
-        <div id="services" class="section scrollspy">
-        </div>
+          </div>
+      </div>
       </section>
       <div id="information">
-        <h3>Professional Accounting Services</h3>
-        <section class="services">
-          <div class="info-block">
-            <img src="images/Money-Transfer.png" alt="Tax Returns" />
-            <h4>Tax Returns</h4>
-            <p>
-              Let us help you prepare and file your business and personal, federal, and state tax returns.
-            </p>
-          </div>
-          <div class="info-block">
-            <img src="images/Bullish.png" alt="Tax Consulting" />
-            <h4>Tax Consulting</h4>
-            <p>
-              We will work to ensure your taxes are filed in the most efficient manner with the most value to you.
-            </p>
-          </div>
-          <div class="info-block">
-            <img src="images/Calendar.png" alt="Monthly Bookkeeping" />
-            <h4>Monthly Bookkeeping</h4>
-            <p>
-              Let us maintain your financial books so you can focus on growing your business.
-            </p>
-          </div>
-          <div class="info-block">
-            <img src="images/Debt.png" alt="Payroll" />
-            <h4>Payroll</h4>
-            <p>
-              We know you're busy with multiple facets of your business, and we can help operations run smoothly by ensuring employees are paid on their regularly scheduled interval.
-            </p>
-          </div>
-          <div class="info-block">
-            <img src="images/US-Dollar.png" alt="Sales Tax Services" />
-            <h4>Sales Tax Services</h4>
-            <p>
-              It can be difficult to track taxes owed as revenue is generated. We can take the work out of it for you by overseeing this aspect of your business.
-            </p>
-          </div>
-          <div class="info-block">
-            <img src="images/Inspection.png" alt="Contractors License Reports" />
-            <h4>Contractor's License Reports</h4>
-            <span class="last">
+        <div id="services">
+          <h3>Professional Accounting Services</h3>
+          <section class="services">
+            <div class="info-block">
+              <img src="images/Money-Transfer.png" alt="Tax Returns" />
+              <h4>Tax Returns</h4>
+              <p>
+                Let us help you prepare and file your business and personal, federal, and state tax returns.
+              </p>
+            </div>
+            <div class="info-block">
+              <img src="images/Bullish.png" alt="Tax Consulting" />
+              <h4>Tax Consulting</h4>
+              <p>
+                We will work to ensure your taxes are filed in the most efficient manner with the most value to you.
+              </p>
+            </div>
+            <div class="info-block">
+              <img src="images/Calendar.png" alt="Monthly Bookkeeping" />
+              <h4>Monthly Bookkeeping</h4>
+              <p>
+                Let us maintain your financial books so you can focus on growing your business.
+              </p>
+            </div>
+            <div class="info-block">
+              <img src="images/Debt.png" alt="Payroll" />
+              <h4>Payroll</h4>
+              <p>
+                We know you're busy with multiple facets of your business, and we can help operations run smoothly by ensuring employees are paid on their regularly scheduled interval.
+              </p>
+            </div>
+            <div class="info-block">
+              <img src="images/US-Dollar.png" alt="Sales Tax Services" />
+              <h4>Sales Tax Services</h4>
+              <p>
+                It can be difficult to track taxes owed as revenue is generated. We can take the work out of it for you by overseeing this aspect of your business.
+              </p>
+            </div>
+            <div class="info-block">
+              <img src="images/Inspection.png" alt="Contractors License Reports" />
+              <h4>Contractor's License Reports</h4>
+              <span class="last">
               <p>
                 Let us help you generate contractor's license reports.
               </p>
             </span>
-          </div>
-          <div id="philosophy" class="section scrollspy">
-        </section>
-        <h3 class="philHeader">Honest and Fair Collaboration with Clients</h3>
+            </div>
         </div>
-        <section class="philosophy">
-          <div class="philosophy-block">
-            <img src="images/Scales.png" alt="Integrity" />
-            <h4>Integrity</h4>
-            <p>
-              Honesty and transparency are ingrained in our business practices, and we serve our clients while adhering to these conventions.
-            </p>
-          </div>
-          <div class="philosophy-block">
-            <img src="images/Approval.png" alt="Quality" />
-            <h4>Quality</h4>
-            <p>
-              We maintain a high standard of quality in our work with great focus on accuracy and timely delivery.
-            </p>
-          </div>
-          <div class="philosophy-block">
-            <img src="images/Graduation-Cap.png" alt="Experience" />
-            <h4>Experience</h4>
-            <span class="last">
+        <div id="philosophy">
+          <h3 class="philHeader">Honest and Fair Collaboration with Clients</h3>
+          <section class="philosophy">
+            <div class="philosophy-block">
+              <img src="images/Scales.png" alt="Integrity" />
+              <h4>Integrity</h4>
+              <p>
+                Honesty and transparency are ingrained in our business practices, and we serve our clients while adhering to these conventions.
+              </p>
+            </div>
+            <div class="philosophy-block">
+              <img src="images/Approval.png" alt="Quality" />
+              <h4>Quality</h4>
+              <p>
+                We maintain a high standard of quality in our work with great focus on accuracy and timely delivery.
+              </p>
+            </div>
+            <div class="philosophy-block">
+              <img src="images/Graduation-Cap.png" alt="Experience" />
+              <h4>Experience</h4>
+              <span class="last">
               <p>
                 We have served our clients' accounting needs for over {{businessYears}} years, and this experience is applied to our work everyday.
               </p>
             </span>
-          </div>
-        </section>
+            </div>
+        </div>
       </div>
-      <section class="reviews">
+      <div id="reviews">
         <h3>What Our Customers Say</h3>
         <div class="quoteBlock">
           <p class="quote">
@@ -202,23 +204,21 @@
             - Donald
           </p>
         </div>
-      </section>
-      <div id="about">
       </div>
-      <section class="about">
-        <div class="personalPhoto">
-          <img src="images/bob.jpg" alt="Bob Peiser" />
-        </div>
-        <div class="personalInfo">
-          <p>Bob Peiser was born in Sayville, New York. Growing up, he was an avid runner and went to Bentley College in Massachusetts on a running scholarship to study accounting. He obtained his CPA license in 1982, and he has been an accounting professional
-            ever since.</p>
-          <p>After working in New York City, he transferred to Dallas, Texas and received his M.B.A at Dallas University. There he met his wife, Alice. In 1989, the family moved to Des Moines, Iowa so Bob could attend law school at Drake University. After
-            graduating he took a position as controller in Lamar, Missouri.</p>
-          <p>After nearly 3 years, they moved to Springdale, Arkansas in 1996 where Bob became a partner in a local CPA firm. He has been practicing in the Springdale area ever since. Bob still enjoys running, being very involved at his church, New Heights
-            in Fayetteville, and spending time with his wife, 4 children and 3 (soon 4!) grandchildren.
-          </p>
-        </div>
-      </section>
+      <div id="about">
+          <div class="personalPhoto">
+            <img src="images/bob.jpg" alt="Bob Peiser" />
+          </div>
+          <div class="personalInfo">
+            <p>Bob Peiser was born in Sayville, New York. Growing up, he was an avid runner and went to Bentley College in Massachusetts on a running scholarship to study accounting. He obtained his CPA license in 1982, and he has been an accounting professional
+              ever since.</p>
+            <p>After working in New York City, he transferred to Dallas, Texas and received his M.B.A at Dallas University. There he met his wife, Alice. In 1989, the family moved to Des Moines, Iowa so Bob could attend law school at Drake University. After
+              graduating he took a position as controller in Lamar, Missouri.</p>
+            <p>After nearly 3 years, they moved to Springdale, Arkansas in 1996 where Bob became a partner in a local CPA firm. He has been practicing in the Springdale area ever since. Bob still enjoys running, being very involved at his church, New Heights
+              in Fayetteville, and spending time with his wife, 4 children and 3 (soon 4!) grandchildren.
+            </p>
+          </div>
+      </div>
     </div>
     <footer>
       <div class="footer-wrapper">
@@ -227,7 +227,7 @@
         </div>
         <div class="contact-block">
           <a href="tel:479-756-1199">
-            <img class="contact" src="images/phone.png" />
+            <img class="contact" src="images/phone.png" alt="call" />
           </a>
           <a href="mailto:bobpeisercpa@gmail.com">
             <img class="contact" src="images/Email.png" alt="email" />
@@ -256,12 +256,13 @@
 
 
   <!-- Scripts -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" defer></script>
-  <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
-  <script type="text/javascript" src="app/app.js" defer></script>
-  <script type="text/javascript" src="app/mainCtrl.js" defer></script>
-  <script type="text/javascript" src="app/modal-init.min.js" defer></script>
-  <script type="text/javascript" src="app/modal.min.js" defer></script>
+  <script type="text/javascript" defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" ></script>
+  <script type="text/javascript" defer="defer" src="node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" defer="defer" src="node_modules/jquery.scrollto/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" defer="defer" src="app/app.js"></script>
+  <script type="text/javascript" defer="defer" src="app/mainCtrl.min.js"></script>
+  <script type="text/javascript" defer="defer" src="app/modal-init.min.js"></script>
+  <script type="text/javascript" defer="defer" src="app/modal.min.js"></script>
 
 </body>
 
