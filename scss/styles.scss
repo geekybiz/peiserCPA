@@ -287,6 +287,7 @@ Reviews Section
 #reviews {
   background-color: $alt-background;
   margin: 0;
+  height: inherit;
 }
 .quoteBlock {
   max-width: 60em;

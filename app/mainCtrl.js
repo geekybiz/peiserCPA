@@ -1,5 +1,5 @@
 angular.module('peiserApp')
-  .controller('mainCtrl', function($scope) {
+  .controller('mainCtrl', ['$scope', function($scope) {
 
     // Automatic time updates
 
@@ -106,4 +106,4 @@ angular.module('peiserApp')
         }
       }
     });
-  });
+  }]);

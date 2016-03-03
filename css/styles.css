@@ -252,7 +252,8 @@ Reviews Section
 ***************/
 #reviews {
   background-color: #f4f7f8;
-  margin: 0; }
+  margin: 0;
+  height: inherit; }
 
 .quoteBlock {
   max-width: 60em;
