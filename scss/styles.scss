@@ -163,6 +163,9 @@ header {
 nav.mobile {
   display: none;
 }
+nav.desktop {
+  display: block;
+}
 .nav-list {
   display: inline;
   list-style: none;
@@ -172,15 +175,24 @@ nav.mobile {
   margin-left: 40px;
   padding-top: 10px;
 }
-#logo a, .nav-item a:visited {
+#logo a {
   color: $heading-color;
+}
+.nav-list li a:hover {
+  color: $intro-color;
+}
+.nav-list li a:active {
+  color: $intro-color;
+}
+.nav-list li a.active {
+  color: $intro-color;
 }
 .nav-item {
   float: right;
   margin-right: 40px;
   padding-top: 30px;
 }
-.nav-item a {
+.nav-item > a {
   text-decoration: none;
   color: $heading-color;
 }
@@ -272,7 +284,7 @@ Philosophy Section
 /***************
 Reviews Section
 ***************/
-section.reviews {
+#reviews {
   background-color: $alt-background;
   margin: 0;
 }
@@ -294,7 +306,7 @@ p.name {
 /***************
   About Section
 ***************/
-.about {
+#about {
   width: 60em;
   height: 18.75em;
   margin: 0 auto;
@@ -347,6 +359,14 @@ img.contact {
 .icons-link a:visited {
   color: $font-color;
 }
+.developer a {
+  font-size: 0.75em;
+  color: $font-color;
+  text-decoration: none;
+}
+.developer a:visited {
+  color: $font-color;
+}
 .icons {
   color: $intro-color;
 }
@@ -355,7 +375,7 @@ img.contact {
 MOBILE STYLES
 ***************/
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1230px) {
 
 /***************
 Total Page Rules
@@ -441,6 +461,15 @@ hgroup {
   }
   #logo-mobile a:visited {
     color: $heading-color;
+  }
+  .nav-list-mobile li a:hover {
+    color: $intro-color;
+  }
+  .nav-list-mobile li a:active {
+    color: $intro-color;
+  }
+  .nav-list-mobile li a.active {
+    color: $intro-color;
   }
   #slideIn-mobile {
     display: none;
@@ -533,7 +562,7 @@ button.contact {
   /***************
   Reviews Section
   ***************/
-  section.reviews {
+  #reviews {
     background-color: $background-color;
   }
 
@@ -554,7 +583,7 @@ button.contact {
   /***************
     About Section
   ***************/
-  .about {
+  #about {
     width: inherit;
     background-color: $alt-background;
     height: inherit;
