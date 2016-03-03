@@ -462,9 +462,9 @@ MOBILE STYLES
   button.contact {
     margin-bottom: 6%; }
 
-  /***************
+  /***************************
   Services/Philosophy Section
-  ***************/
+  ***************************/
   .services, .philosophy {
     display: block; }
 
@@ -564,6 +564,12 @@ MOBILE STYLES
     font-size: 2em;
     text-decoration: none;
     color: #384047; }
+
+  ul {
+    -webkit-padding-start: 1.1em; }
+
+  .nav-item-mobile {
+    margin-right: 1em; }
 
   .nav-item-mobile a {
     text-decoration: none;

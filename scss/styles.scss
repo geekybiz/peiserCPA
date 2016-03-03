@@ -495,9 +495,9 @@ hgroup {
     outline: none;
   }
 
-  /*****************
-  Section Alignment
-  *****************/
+/*****************
+Section Alignment
+*****************/
   #information {
     margin: 0 auto;
     width: 100%;
@@ -517,9 +517,9 @@ button.contact {
   margin-bottom: 6%;
 }
 
-  /***************
-  Services/Philosophy Section
-  ***************/
+/***************************
+Services/Philosophy Section
+***************************/
   .services, .philosophy {
     display: block;
   }
@@ -634,6 +634,15 @@ button.contact {
     text-decoration: none;
     color: $heading-color;
   }
+
+ul {
+  -webkit-padding-start: 1.1em;
+}
+
+  .nav-item-mobile {
+    margin-right: 1em;
+  }
+
   .nav-item-mobile a {
     text-decoration: none;
     color: $heading-color;
@@ -648,5 +657,5 @@ button.contact {
     height: 2.5em;
     padding-top: 5px;
     margin-right: 20px;
-}
+  }
 }
