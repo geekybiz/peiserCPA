@@ -1,0 +1,17 @@
+<div class="logInContainer">
+  <div class="logInIntro" style="padding-bottom:0px;">
+    <h2 class="logInHeader">Ready to sling some blog game?  Of course you are.</h2>
+  </div>
+  <form class="form-signin" name="signInForm" role="form">
+    <div class="form-group" ng-class="{ 'has-error' : signInForm.email.$invalid}">
+      <input ng-model="user.email" type="email" name="email" class="form-control" placeholder="E-mail address">
+      <p class="help-block" ng-show="signInForm.email.$invalid">Please enter valid e-mail address</p>
+    </div>
+      <div class="form-group" ng-class="{ 'has-error' : signInForm.password.$invalid }">
+        <input ng-model="user.password" ng-minlength="8" type="password" name="password" class="form-control" placeholder="Password">
+        <p class="help-block" ng-show="signInForm.password.$error.minlength">Password requires minimum of 8 characters</p>
+      </div>
+      <button ladda-loading="login.loading" data-style="expand-right" ng-disabled="!user.email || !user.password" ng-click="signIn($event)" class="logInBtn"><span class="ladda-label">Sign in</span></button>
+    </form>
+
+  </div>
