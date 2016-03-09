@@ -5,7 +5,7 @@
   <meta name="fragment" content="!">
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-  <meta name='description' content="Tax return, tax consulting, monthly bookkeeping, payroll, sales tax, and contractors' license report services provided by an experienced accounting professional serving the Northwest AR area including Springdale, Fayetteville, Rogers, and Bentonville.">
+  <meta name='description' content="Tax, bookkeeping, payroll, and contractors' license report services serving the Northwest AR area: Springdale, Fayetteville, Rogers, and Bentonville.">
   <meta name="msvalidate.01" content="7C49386D78A20D846BAF0424B5DEB9B0" />
   <title>Bob Peiser, CPA: Tax Returns, Tax Consulting, Accounting Services</title>
   <link rel="stylesheet" href="css/styles.min.css" media="screen" title="no title" charset="utf-8">
@@ -197,7 +197,7 @@
           &copy;{{year}} Bob Peiser, CPA
         </div>
         <div class="contact-block">
-          <a href="tel:479-756-1199">
+          <a ng-click="goog_report-conversion()" href="tel:479-756-1199">
             <img class="contact" src="images/phone.png" alt="call" />
           </a>
           <a href="mailto:bobpeisercpa@gmail.com">
@@ -225,7 +225,7 @@
     <div id="contact-options">
       <p class="modalMessage">Awesome! You're one step closer to business nirvana!
       </p>
-      <a href="tel:479-756-1199">
+      <a ng-click="goog_report-conversion()" href="tel:479-756-1199">
         <div class="modalImage">
           <img src="images/phone.png" alt="Call Us!" />
         </div>
@@ -261,6 +261,10 @@
   <script type="text/javascript" defer="defer" src="app/mainCtrl.min.js"></script>
   <script type="text/javascript" defer="defer" src="app/modal-init.min.js"></script>
   <script type="text/javascript" defer="defer" src="app/modal.min.js"></script>
+  <script type="text/javascript" defer="defer" src="app/googleCallTracking.js"></script>
+  <script type="text/javascript"
+    src="//www.googleadservices.com/pagead/conversion_async.js">
+  </script>
 
 </body>
 
