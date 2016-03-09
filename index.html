@@ -197,7 +197,7 @@
           &copy;{{year}} Bob Peiser, CPA
         </div>
         <div class="contact-block">
-          <a href="tel:479-756-1199">
+          <a ng-click="goog_report-conversion()" href="tel:479-756-1199">
             <img class="contact" src="images/phone.png" alt="call" />
           </a>
           <a href="mailto:bobpeisercpa@gmail.com">
@@ -225,7 +225,7 @@
     <div id="contact-options">
       <p class="modalMessage">Awesome! You're one step closer to business nirvana!
       </p>
-      <a href="tel:479-756-1199">
+      <a ng-click="goog_report-conversion()" href="tel:479-756-1199">
         <div class="modalImage">
           <img src="images/phone.png" alt="Call Us!" />
         </div>
@@ -261,6 +261,10 @@
   <script type="text/javascript" defer="defer" src="app/mainCtrl.min.js"></script>
   <script type="text/javascript" defer="defer" src="app/modal-init.min.js"></script>
   <script type="text/javascript" defer="defer" src="app/modal.min.js"></script>
+  <script type="text/javascript" defer="defer" src="app/googleCallTracking.js"></script>
+  <script type="text/javascript"
+    src="//www.googleadservices.com/pagead/conversion_async.js">
+  </script>
 
 </body>
 
