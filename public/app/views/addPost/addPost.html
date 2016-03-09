@@ -1,0 +1,16 @@
+<div class="addPostWrapper">
+  <h1 class="addPostHeader">Start Slingin'</h1>
+<form ng-submit="addPost()">
+  <div class="titleArea">
+    <label class="postTitle">Title</label>
+    <textarea class="postTitleInput" ng-model="post.title"></textarea>
+  </div>
+
+  <div class="contentArea">
+    <label class="postContent">Content</label>
+    <textarea class="postContentInput" ng-model="post.content"></textarea>
+  </div>
+
+  <input type="submit" class="publishBtn" type="button" name="button" ng-disabled="!post.title || !post.content" value="Publish" />
+  </form>
+</div>

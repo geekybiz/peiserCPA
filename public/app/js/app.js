@@ -1,4 +1,4 @@
-angular.module('peiserApp', ['ui.router'])
+angular.module('peiserApp', ['ui.router', 'firebase'])
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
   $stateProvider
@@ -19,6 +19,12 @@ angular.module('peiserApp', ['ui.router'])
     url: '/logIn',
     templateUrl: 'app/views/logIn/logIn.html',
     controller: 'logInCtrl'
+  })
+
+  .state('addPost', {
+    url: '/addPost',
+    templateUrl: 'app/views/addPost/addPost.html',
+    controller: 'addPostCtrl'
   })
 
   $urlRouterProvider.otherwise('/');

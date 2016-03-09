@@ -15,15 +15,16 @@ $alt-background: #f4f7f8;
 /***************
 Total Page Rules
 ***************/
+
 html,
 body {
   font-family: $font-stack;
   width: 100%;
-  height: 100%;
   background-color: $background-color;
   margin: 0px;
   padding: 0px;
 }
+
 
 
 /***************
@@ -362,8 +363,18 @@ p.name {
   border-radius: 5px;
   margin-bottom: 1em;
   border: 1px solid $alt-background;
-  outline: none;
   font-size: 1em;
+  padding-top: 5px;
+}
+
+input.form-control:focus {
+  outline: none !important;
+  // border: 1px solid $intro-color;
+  box-shadow: 0 0 5px #ffb366;
+}
+
+ button.logInBtn:focus {
+  outline: none;
 }
 
 button.logInBtn{
@@ -386,6 +397,68 @@ button.logInBtn:active{
   color: $background-color;
 }
 
+.has-error {
+  color: red;
+}
+
+/*******************
+  Add Post Section
+*******************/
+.addPostWrapper {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1230px;
+}
+
+.addPostHeader {
+  padding-top: 3em;
+  text-align: center;
+}
+
+.titleArea {
+  margin-bottom: 2em;
+}
+.postTitleInput {
+  width: 100%;
+  height: 3em;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.postContentInput {
+  width: 100%;
+  height: 10em;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.postTitleInput:focus, .postContentInput:focus {
+  outline: none;
+}
+
+input.publishBtn{
+  background-color: $intro-color;
+  border: 1px solid $intro-color;
+  width: 7em;
+  height: 2em;
+  margin: 1em 0 1em 0;
+  border-radius: 10px;
+  font-size: 1em;
+  color: $background-color;
+}
+
+button.publishBtn:hover{
+  background-color: $intro-color;
+  color: $background-color;
+}
+
+button.publishBtn:active{
+  background-color: $intro-color;
+  color: $background-color;
+}
+
+
+
 /***************
   Blog Section
 ***************/
@@ -406,9 +479,10 @@ footer {
 }
 footer {
   top: 0.5em;
-  bottom: 0;
-
 }
+
+
+
 .date.ng-binding {
   padding-top: 10px;
 }
