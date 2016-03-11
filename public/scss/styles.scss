@@ -114,7 +114,7 @@ h4 {
   margin-top: 0;
   padding-top: 10px;
 }
-p {
+p.pInfo {
   font-size: 1em;
   color: $font-color;
   padding: 0 .625em 1.250em;
@@ -462,8 +462,16 @@ button.publishBtn:active{
 /***************
   Blog Section
 ***************/
+.blogWrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+}
 .blogHeader {
   padding-top: 3em;
+  text-align: center;
+}
+p.articleContent {
+  padding-left: 0;
 }
 
 
@@ -539,7 +547,7 @@ hgroup {
     text-align: center;
     width: 100%;
   }
-  p {
+  p.pInfo {
     max-width: 480px;
     margin: 0 auto;
   }

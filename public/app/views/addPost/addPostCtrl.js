@@ -1,5 +1,7 @@
+'use strict';
+
 angular.module('peiserApp')
-.controller('addPostCtrl', ['$scope','$firebase','$firebaseArray','CommonProp', function($scope, $firebase, $firebaseArray, CommonProp){
+.controller('addPostCtrl', ['$scope','$firebase','$firebaseArray','CommonProp', '$location', function($scope, $firebase, $firebaseArray, CommonProp, $location){
   $scope.addPost = function() {
     var firebaseObj = new Firebase("https://peisercpa.firebaseio.com/Articles");
     var fb = $firebaseArray(firebaseObj);
@@ -8,8 +10,10 @@ angular.module('peiserApp')
 
     fb.$add({
       title: title,
-      post: post
+      post: post,
+      emailId: CommonProp.getUser()
     }).then(function(ref){
+      $location.path('/blog');
       console.log(ref);
     }, function(error) {
       console.log("Error:", error);
