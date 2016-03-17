@@ -11,8 +11,8 @@ body {
   font-family: Roboto, sans-serif;
   width: 100%;
   background-color: #fff;
-  margin: 0px;
-  padding: 0px; }
+  margin: 0;
+  padding: 0; }
 
 /***************
     Modal
@@ -29,7 +29,7 @@ body {
   border: 1px solid #ff1654;
   width: 16.438em;
   height: 2.500em;
-  border-radius: .625em;
+  border-radius: 0.625em;
   font-size: 1em;
   color: #ff1654;
   margin-left: 2.406em;
@@ -44,23 +44,24 @@ body {
   outline: none; }
 
 #contact-options p.modalMessage {
-  margin-top: .313em;
-  padding: 0 .313em 0 .313em;
-  margin-bottom: .313em; }
-#contact-options p, #contact-options img {
+  margin-top: 0.313em;
+  padding: 0 0.313em;
+  margin-bottom: 0.313em; }
+#contact-options p,
+#contact-options img {
   text-align: center;
   padding: 0;
   text-decoration: none; }
 #contact-options img {
   height: 3.125em;
   width: 3.125em;
-  padding-top: .250em; }
+  padding-top: 0.250em; }
 #contact-options .modalImage {
   text-align: center; }
 #contact-options p.modalContact {
-  margin-top: 0px;
+  margin-top: 0;
   font-weight: bold;
-  margin-bottom: .313em; }
+  margin-bottom: 0.313em; }
 #contact-options a {
   text-decoration: none; }
 
@@ -92,11 +93,10 @@ h4 {
 p.pInfo {
   font-size: 1em;
   color: #576366;
-  padding: 0 .625em 1.250em; }
+  padding: 0 0.625em 1.250em; }
 
 #logo a {
   font-family: "Varela Round", sans-serif;
-  font-size: 2.5em;
   text-decoration: none; }
 
 /*****************
@@ -106,13 +106,15 @@ Section Alignment
   width: 60em;
   margin: 0 auto; }
 
-.services, .philosophy {
+.services,
+.philosophy {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around; }
 
-.info-block, .philosophy-block {
+.info-block,
+.philosophy-block {
   width: 300px;
   margin: 10px;
   text-align: center; }
@@ -127,6 +129,9 @@ header {
   width: 100%;
   border-bottom: 1px solid #f4f7f8;
   height: 4.5em; }
+
+header2 {
+  display: none; }
 
 /***************
    Navigation
@@ -143,11 +148,13 @@ nav.desktop {
 
 #logo {
   float: left;
-  margin-left: 40px;
-  padding-top: 10px; }
+  margin-left: 40px; }
 
 #logo a {
   color: #384047; }
+
+h1#logo {
+  margin-top: 15px; }
 
 .nav-list li a:hover {
   color: #5fcf80; }
@@ -207,10 +214,7 @@ button.headerButtonDesktop:focus {
   padding-top: 5em;
   text-align: center; }
 
-hgroup {
-  padding: 20px; }
-
-hgroup > h1,
+.headline-block > h1,
 h2 {
   color: #fff; }
 
@@ -269,7 +273,8 @@ Reviews Section
   margin: 0 auto; }
 
 p.quote {
-  font-style: italic; }
+  font-style: italic;
+  padding: 0 10px 0 10px; }
 
 p.name {
   font-weight: bold;
@@ -294,7 +299,7 @@ p.name {
   width: 250px; }
 
 .personalInfo {
-  padding: 15px 0 0 0; }
+  padding: 15px 0 0; }
 
 .personalInfo > p {
   margin-bottom: 0;
@@ -377,7 +382,8 @@ button.logInBtn:active {
   padding: 5px;
   font-size: 1em; }
 
-.postTitleInput:focus, .postContentInput:focus {
+.postTitleInput:focus,
+.postContentInput:focus {
   outline: none; }
 
 input.publishBtn {
@@ -385,7 +391,7 @@ input.publishBtn {
   border: 1px solid #5fcf80;
   width: 7em;
   height: 2em;
-  margin: 1em 0 1em 0;
+  margin: 1em 0;
   border-radius: 10px;
   font-size: 1em;
   color: #fff; }
@@ -401,7 +407,7 @@ button.publishBtn:active {
 /***************
   Blog Section
 ***************/
-.blogWrapper {
+.blogContent {
   max-width: 1230px;
   margin: 0 auto; }
 
@@ -447,8 +453,8 @@ MOBILE STYLES
 ***************/
 @media only screen and (max-width: 1230px) {
   /***************
-  Total Page Rules
-  ***************/
+Total Page Rules
+***************/
   html,
   body {
     font-family: Roboto, sans-serif;
@@ -457,13 +463,10 @@ MOBILE STYLES
     margin: 0 auto; }
 
   h1 {
-    font-size: 2em; }
-
-  h2 {
-    font-size: 1.5em; }
-
-  hgroup {
-    padding: 20px; }
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0; }
 
   #content {
     text-align: center;
@@ -486,7 +489,11 @@ MOBILE STYLES
   /***************
      Header
   ***************/
+  header {
+    display: none; }
+
   header2 {
+    display: block;
     position: fixed;
     background-color: #fff;
     z-index: 10;
@@ -494,14 +501,29 @@ MOBILE STYLES
     border-bottom: 1px solid #f4f7f8; }
 
   /***************
-     Navigation
-  ***************/
+   Navigation
+***************/
   nav.desktop {
     display: none; }
 
   nav.mobile {
     display: block;
     text-align: center; }
+
+  h1#logo-mobile a {
+    font-family: "Varela Round", sans-serif;
+    text-decoration: none;
+    color: #384047; }
+
+  h1#logo-mobile a:visited {
+    color: #384047; }
+
+  .nav-item-mobile a {
+    text-decoration: none;
+    color: #384047; }
+
+  .nav-item-mobile a:visited {
+    color: #384047; }
 
   .nav-item-mobile {
     display: inline;
@@ -513,27 +535,11 @@ MOBILE STYLES
     margin-right: 2em;
     list-style: none; }
 
-  #logo-mobile a {
-    font-family: "Varela Round", sans-serif;
-    font-size: 3em;
-    text-decoration: none;
-    color: #384047; }
-
-  .nav-item-mobile a {
-    text-decoration: none;
-    color: #384047; }
-
-  .nav-item-mobile a:visited {
-    color: #384047; }
-
   .blogNavMobile a {
     text-decoration: none;
     color: #384047; }
 
   .blogNavMobile a:visited {
-    color: #384047; }
-
-  #logo-mobile a:visited {
     color: #384047; }
 
   .nav-list-mobile li a:hover {
@@ -568,31 +574,44 @@ MOBILE STYLES
     outline: none; }
 
   /*****************
-  Section Alignment
-  *****************/
+Section Alignment
+*****************/
   #information {
     margin: 0 auto;
     width: 100%; }
 
   /***************
-    Intro Section
-  ***************/
+  Intro Section
+***************/
   .intro {
     background-color: #5fcf80;
     height: inherit;
     padding-top: 5em;
     text-align: center; }
 
+  .headline-block {
+    padding: inherit;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .headline {
+    font-size: 2.5em; }
+
+  .sub-headline {
+    font-size: 2em; }
+
   button.contact {
     margin-bottom: 6%; }
 
   /***************************
-  Services/Philosophy Section
-  ***************************/
-  .services, .philosophy {
+Services/Philosophy Section
+***************************/
+  .services,
+  .philosophy {
     display: block; }
 
-  .info-block, .philosophy-block {
+  .info-block,
+  .philosophy-block {
     width: 100%; }
 
   .info-block p {
@@ -673,33 +692,37 @@ MOBILE STYLES
   footer {
     background-color: #fff;
     text-align: center; } }
-@media only screen and (max-width: 480px) {
-  html, body {
+@media only screen and (max-width: 490px) {
+  html,
+  body {
     margin: 0 auto; }
 
   .intro {
     height: inherit; }
+
+  .info-block {
+    margin-left: 0px; }
 
   button.contact {
     margin-bottom: 1em; }
 
   #logo-mobile a {
     font-family: "Varela Round", sans-serif;
-    font-size: 2em;
     text-decoration: none;
-    color: #384047; }
+    color: #384047;
+    font-size: .75em; }
 
   ul {
     -webkit-padding-start: 1.1em; }
 
   .nav-item-mobile {
-    margin-right: 1em; }
+    margin-right: 10px; }
 
   .nav-item-mobile a {
     text-decoration: none;
     color: #384047;
-    font-size: .8em;
-    -webkit-font-size: .8em;
+    font-size: 0.8em;
+    -webkit-font-size: 0.8em;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%; }
@@ -710,8 +733,8 @@ MOBILE STYLES
   .blogNavMobile a {
     text-decoration: none;
     color: #384047;
-    font-size: .8em;
-    -webkit-font-size: .8em;
+    font-size: 0.8em;
+    -webkit-font-size: 0.8em;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%; }

@@ -89,6 +89,10 @@ angular.module('peiserApp')
 
     for (var i = 0; i < aArray.length; i++) {
       var theID = aArray[i];
+      var divPosId = $(theID);
+      if (!divPosId.length) {
+        return;
+      }
       var divPos = $(theID).offset().top - 180;
       var divHeight = $(theID).height();
       if (windowPos >= divPos && windowPos < (divPos + divHeight)) {

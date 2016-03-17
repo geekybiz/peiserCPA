@@ -1,8 +1,66 @@
-<h1 class="blogHeader">This is the blog</h1>
+<!-- <div class="remodal-bg"> -->
+<body>
+  <div class="blogWrapper">
+    <h1 class="blogHeader">This is the blog</h1>
 
-<div class="blogWrapper" ng-repeat="article in articles">
-  <h3 class="articleTitle">{{article.title}}</h3>
-  <p class"articleContent">
-    {{article.post}}
+    <div class="blogContent" ng-repeat="article in articles">
+      <h3 class="articleTitle">{{article.title}}</h3>
+      <p class "articleContent">
+        {{article.post}}
+      </p>
+      <div class="editBlogPost">
+        <button type="button" name="edit-button">Edit</button>
+      </div>
+      <button type="button" name="button">Delete</button>
+    </div>
+
+    <!-- MODAL CONTENT -->
+    <div id="new-blog-content">
+      <p class="modalMessage">Awesome! You're one step closer to business nirvana!
+      </p>
+      <a href="tel:479-756-1199">
+        <div class="modalImage">
+          <img src="images/phone.png" alt="Call Us!" />
+        </div>
+        <p class="modalContact">
+          Phone: 479-756-1199
+        </p>
+      </a>
+      <a href="mailto:bobpeisercpa@gmail.com">
+        <div class="modalImage">
+          <img src="images/Email.png" alt="E-mail Us!" />
+        </div>
+        <p class="modalContact">
+          E-Mail: bobpeisercpa@gmail.com
+        </p>
+        <a href="https://goo.gl/maps/z8hZJLnuxcJ2" target="_blank">
+          <div class="modalImage">
+            <img src="images/small-business.png" alt="Visit Us!" />
+          </div>
+          <p class="modalContact">
+            Address: 1392 Plaza Pl Springdale, AR 72764
+          </p>
+        </a>
+    </div>
+  </div>
+</body>
+
+
+<!-- </div> -->
+
+<!-- <a href="#blogModal">Call the modal with data-remodal-id="modal"</a>
+
+<a data-remodal-target="modal" href="#">Call the modal with data-remodal-id="modal"</a>
+
+
+
+<div class="remodal" data-remodal-id="blogModal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
   </p>
-</div>
+  <br>
+  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+</div> -->
