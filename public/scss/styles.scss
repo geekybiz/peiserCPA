@@ -1,7 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+/***********************
+Materialize Sass Modal
+************************/
+@import "../node_modules/materialize-css/sass/materialize-custom.scss";
+
+
 /***************
-   Sass Variables
+Sass Variables
 ***************/
 $title-font: "Varela Round", sans-serif;
 $font-stack: Roboto, sans-serif;
@@ -21,17 +28,18 @@ body {
   margin: 0;
   padding: 0;
 }
-/***************
-    Modal
-***************/
-.modal {
+
+// /***************
+//     Modal
+// ***************/
+.homeModal {
   position: absolute;
   z-index: 1000;
   background-color: $background-color;
   border: 2px solid #384047;
   overflow: scroll;
 }
-.modal-close {
+.homeModal-close {
   background-color: transparent;
   border: 1px solid #ff1654;
   width: 16.438em;
@@ -42,12 +50,12 @@ body {
   margin-left: 2.406em;
   margin-top: 1.5em;
 }
-.modal-close:hover,
-.modal-close:active {
+.homeModal-close:hover,
+.homeModal-close:active {
   background-color: #ff1654;
   color: $background-color;
 }
-.modal-close:focus {
+.homeModal-close:focus {
   outline: none;
 }
 #contact-options {

@@ -117,9 +117,9 @@ angular.module('peiserApp')
 
   var modal = (function(){                          // Declare modal object
 
-    var $modal = $('<div class="modal"/>'),         // Create markup for modal
-        $content = $('<div class="modal-content"/>'),
-        $close = $('<button role="button" class="modal-close">Close</button>');
+    var $modal = $('<div class="homeModal"/>'),         // Create markup for modal
+        $content = $('<div class="homeModal-content"/>'),
+        $close = $('<button role="button" class="homeModal-close">Close</button>');
         $overlay = $('<div class="overlay"/>');     // Create overlay element
 
     $modal.append($content, $close);                // Add close button to modal

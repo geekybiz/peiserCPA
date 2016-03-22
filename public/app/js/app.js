@@ -1,4 +1,4 @@
-angular.module('peiserApp', ['ui.router', 'firebase'])
+angular.module('peiserApp', ['ui.router', 'firebase', 'ui.materialize'])
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
   $stateProvider
