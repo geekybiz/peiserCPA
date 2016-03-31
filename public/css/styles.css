@@ -1625,7 +1625,6 @@ Materialize Sass Modal
 
 /*** Colors ***/
 /*** Badges ***/
-/*** Buttons ***/
 /*** Cards ***/
 /*** Collapsible ***/
 /*** Chips ***/
@@ -2143,7 +2142,8 @@ h4 {
   color: #384047; }
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 3em;
+  text-align: center; }
 
 h2 {
   font-size: 2em; }
@@ -2190,72 +2190,82 @@ Section Alignment
 /***************
    Header
 ***************/
-header {
+/***************
+   Navigation
+***************/
+/***************
+   Header
+***************/
+header2 > h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 10px; }
+
+header2 {
+  display: block;
   position: fixed;
   background-color: #fff;
   z-index: 10;
   width: 100%;
   border-bottom: 1px solid #f4f7f8;
-  height: 4.5em; }
+  top: 0; }
 
-header2 {
-  display: none; }
-
-/***************
+  /***************
    Navigation
 ***************/
-nav.mobile {
+nav.desktop {
   display: none; }
 
-nav.desktop {
-  display: block; }
-
-.nav-list {
-  display: inline;
-  list-style: none; }
-
-#logo {
-  float: left;
-  margin-left: 40px; }
-
-#logo a {
-  color: #384047; }
-
-h1#logo {
-  margin-top: 15px; }
-
-.nav-list li a:hover {
-  color: #5fcf80; }
-
-.nav-list li a:active {
-  color: #5fcf80; }
-
-.nav-list li a.active {
-  color: #5fcf80; }
-
-.nav-item {
-  float: right;
-  margin-right: 40px;
-  padding-top: 30px; }
-
-.nav-item > a {
-  text-decoration: none;
-  color: #384047; }
-
-.blogNav {
-  float: right;
-  margin-right: 40px;
-  padding-top: 30px; }
-
-.blogNav > a {
-  text-decoration: none;
-  color: #384047; }
-
-#slideIn-desktop {
-  display: none;
+nav.mobile {
+  display: block;
   text-align: center; }
 
-button.headerButtonDesktop {
+h1#logo-mobile a {
+  font-family: "Varela Round", sans-serif;
+  text-decoration: none;
+  color: #384047;
+  margin-top: 0; }
+
+h1#logo-mobile a:visited {
+  color: #384047; }
+
+.nav-item-mobile a {
+  text-decoration: none;
+  color: #384047; }
+
+.nav-item-mobile a:visited {
+  color: #384047; }
+
+.nav-item-mobile {
+  display: inline;
+  margin-right: 2em;
+  list-style: none; }
+
+.blogNavMobile {
+  display: inline;
+  margin-right: 2em;
+  list-style: none; }
+
+.blogNavMobile a {
+  text-decoration: none;
+  color: #384047; }
+
+.blogNavMobile a:visited {
+  color: #384047; }
+
+.nav-list-mobile li a:hover {
+  color: #5fcf80; }
+
+.nav-list-mobile li a:active {
+  color: #5fcf80; }
+
+.nav-list-mobile li a.active {
+  color: #5fcf80; }
+
+#slideIn-mobile {
+  display: none; }
+
+button.headerButton {
   background-color: transparent;
   border: 1px solid #5fcf80;
   width: 263px;
@@ -2263,14 +2273,15 @@ button.headerButtonDesktop {
   border-radius: 10px;
   font-size: 1em;
   color: #5fcf80;
-  margin-top: -.313em; }
+  margin-top: 5px;
+  margin-bottom: 10px; }
 
-button.headerButtonDesktop:hover,
+button.headerButton:hover,
 button.headerButton:active {
   background-color: #5fcf80;
   color: #fff; }
 
-button.headerButtonDesktop:focus {
+button.headerButton:focus {
   outline: none; }
 
 /***************
@@ -2279,12 +2290,15 @@ button.headerButtonDesktop:focus {
 .intro {
   background-color: #5fcf80;
   height: inherit;
-  padding-top: 5em;
+  padding-top: 10em;
   text-align: center; }
 
 .headline-block > h1,
 h2 {
   color: #fff; }
+
+.headline-block > h1 {
+  font-size: 2.5em; }
 
 button.contact {
   width: 263px;
@@ -2454,15 +2468,15 @@ button.logInBtn:active {
 .postContentInput:focus {
   outline: none; }
 
-input.publishBtn {
-  background-color: #5fcf80;
+button.publishBtn {
+  background-color: #fff;
   border: 1px solid #5fcf80;
   width: 7em;
   height: 2em;
-  margin: 1em 0;
+  margin-left: 2em;
   border-radius: 10px;
   font-size: 1em;
-  color: #fff; }
+  color: #5fcf80; }
 
 button.publishBtn:hover {
   background-color: #5fcf80;
@@ -2472,9 +2486,19 @@ button.publishBtn:active {
   background-color: #5fcf80;
   color: #fff; }
 
+button.publishBtn:focus {
+  outline: 0; }
+
 /***************
   Blog Section
 ***************/
+a:-webkit-any-link {
+  text-decoration: none; }
+
+.blogWrapper {
+  max-width: 960px;
+  margin: 0 auto; }
+
 .blogContent {
   max-width: 1230px;
   margin: 0 auto; }
@@ -2485,6 +2509,72 @@ button.publishBtn:active {
 
 p.articleContent {
   padding-left: 0; }
+
+button.editBtn {
+  color: #5fcf80;
+  background-color: #fff;
+  border: 1px solid #5fcf80;
+  width: 7em;
+  height: 2em;
+  margin: 1em 0;
+  border-radius: 10px;
+  font-size: 1em; }
+
+button.editBtn:hover {
+  background-color: #5fcf80;
+  color: #fff; }
+
+button.editBtn:active {
+  background-color: #5fcf80;
+  color: #fff; }
+
+button.editBtn:focus {
+  outline: 0; }
+
+button.deleteBtn {
+  color: #ff1654;
+  background-color: #fff;
+  border: 1px solid #ff1654;
+  width: 7em;
+  height: 2em;
+  margin-left: 2em;
+  border-radius: 10px;
+  font-size: 1em; }
+
+button.deleteBtn:hover {
+  background-color: #ff1654;
+  color: #fff; }
+
+button.deleteBtn:active {
+  background-color: #ff1654;
+  color: #fff; }
+
+button.deleteBtn:focus {
+  outline: 0; }
+
+/**********************
+Delete Blog Post Modal
+**********************/
+button.cancelBtn {
+  color: #0066ff;
+  background-color: #fff;
+  border: 1px solid #0066ff;
+  width: 7em;
+  height: 2em;
+  margin: 1em 0;
+  border-radius: 10px;
+  font-size: 1em; }
+
+button.cancelBtn:hover {
+  background-color: #0066ff;
+  color: #fff; }
+
+button.cancelBtn:active {
+  background-color: #0066ff;
+  color: #fff; }
+
+button.cancelBtn:focus {
+  outline: 0; }
 
 /***************
   Footer
@@ -2672,8 +2762,8 @@ Section Alignment
     margin-bottom: 6%; }
 
   /***************************
-Services/Philosophy Section
-***************************/
+  Services/Philosophy Section
+  ***************************/
   .services,
   .philosophy {
     display: block; }

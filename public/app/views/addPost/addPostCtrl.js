@@ -8,10 +8,12 @@ angular.module('peiserApp')
     var title = $scope.post.title;
     var post = $scope.post.content;
 
+
     fb.$add({
       title: title,
       post: post,
-      emailId: CommonProp.getUser()
+      emailId: CommonProp.getUser(),
+      date: Firebase.ServerValue.TIMESTAMP
     }).then(function(ref){
       $location.path('/blog');
       console.log(ref);
