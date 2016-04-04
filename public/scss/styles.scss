@@ -246,6 +246,7 @@ header2 > h1 {
   text-align: center;
   font-size: 3em;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
   header2 {
     display: block;
@@ -299,6 +300,9 @@ header2 > h1 {
   .blogNavMobile a:visited {
     color: $heading-color;
   }
+  .nav-list-mobile {
+    margin-top: 0;
+  }
   .nav-list-mobile li a:hover {
     color: $intro-color;
   }
@@ -336,7 +340,7 @@ header2 > h1 {
 .intro {
   background-color: $intro-color;
   height: inherit;
-  padding-top: 10em;
+  padding-top: 8.5em;
   text-align: center;
 }
 .headline-block > h1,
@@ -487,6 +491,12 @@ button.logInBtn:active {
 /*******************
   Add Post Section
 *******************/
+#firepad {
+  max-width: 960px;
+  height: 300px;
+  border: 1px solid $heading-color;
+  text-align: center;
+}
 .addPostWrapper {
   height: 100%;
   margin: 0 auto;
@@ -556,8 +566,9 @@ a:-webkit-any-link {
   padding-top: 3em;
   text-align: center;
 }
-p.articleContent {
+.articleContent {
   padding-left: 0;
+  white-space: pre-line;
 }
 
 // Edit Blog Post Button

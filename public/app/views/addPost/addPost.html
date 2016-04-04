@@ -8,8 +8,11 @@
 
   <div class="contentArea">
     <label class="postContent">Content</label>
-    <textarea class="postContentInput" ng-model="post.content"></textarea>
+      <textarea class="postContentInput" ui-tinymce ng-model="post.content"></textarea>
   </div>
+
+  <!-- <label class="postContent">Content</label>
+  <div id="firepad" ng-model="post.content"></div> -->
 
   <!-- <button class="publishBtn" type="button" ng-disabled="!post.title || !post.content" name="button">Publish</button> -->
 

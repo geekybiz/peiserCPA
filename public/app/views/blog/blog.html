@@ -5,12 +5,11 @@
 
   <div class="blogContent" ng-repeat="article in articles">
     <h3 class="articleTitle">{{article.title}}</h3>
-    <p class="postDate">
+    <div class="postDate">
       {{article.date | date: 'MM/dd/yyyy'}}
-    </p>
-    <p class "articleContent">
-      {{article.post}}
-    </p>
+    </div>
+    <div class "articleContent" ng-bind-html="article.post">
+    </div>
 
 
     <!-- Edit/Delete Modal Triggers -->

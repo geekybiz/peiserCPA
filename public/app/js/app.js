@@ -1,4 +1,4 @@
-angular.module('peiserApp', ['ui.router', 'firebase', 'ui.materialize'])
+angular.module('peiserApp', ['ui.router', 'firebase', 'ui.materialize', 'ui.tinymce', 'ngSanitize'])
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
   $stateProvider

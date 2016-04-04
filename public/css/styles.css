@@ -2199,7 +2199,8 @@ Section Alignment
 header2 > h1 {
   text-align: center;
   font-size: 3em;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 header2 {
   display: block;
@@ -2253,6 +2254,9 @@ h1#logo-mobile a:visited {
 .blogNavMobile a:visited {
   color: #384047; }
 
+.nav-list-mobile {
+  margin-top: 0; }
+
 .nav-list-mobile li a:hover {
   color: #5fcf80; }
 
@@ -2290,7 +2294,7 @@ button.headerButton:focus {
 .intro {
   background-color: #5fcf80;
   height: inherit;
-  padding-top: 10em;
+  padding-top: 8.5em;
   text-align: center; }
 
 .headline-block > h1,
@@ -2440,6 +2444,12 @@ button.logInBtn:active {
 /*******************
   Add Post Section
 *******************/
+#firepad {
+  max-width: 960px;
+  height: 300px;
+  border: 1px solid #384047;
+  text-align: center; }
+
 .addPostWrapper {
   height: 100%;
   margin: 0 auto;
@@ -2507,8 +2517,9 @@ a:-webkit-any-link {
   padding-top: 3em;
   text-align: center; }
 
-p.articleContent {
-  padding-left: 0; }
+.articleContent {
+  padding-left: 0;
+  white-space: pre-line; }
 
 button.editBtn {
   color: #5fcf80;

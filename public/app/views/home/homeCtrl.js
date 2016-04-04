@@ -31,10 +31,10 @@ angular.module('peiserApp')
   });
 
   // Link highlighting desktop
-  $('nav a').on('click', function() {
-    $('nav a.active').removeClass('active');
-    $(this).addClass('active')
-  })
+  // $('nav a').on('click', function() {
+  //   $('nav a.active').removeClass('active');
+  //   $(this).addClass('active')
+  // })
 
   // Link highlighting mobile
   $('.nav-list-mobile a').on('click', function() {
@@ -43,17 +43,17 @@ angular.module('peiserApp')
   })
 
   // Smooth scrolling to sections desktop
-  $('.nav-item a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
-
-    var target = this.hash;
-    var $target = $(target);
-
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top - 73
-    }, 900, 'swing');
-
-  });
+  // $('.nav-item a[href^="#"]').on('click', function(e) {
+  //   e.preventDefault();
+  //
+  //   var target = this.hash;
+  //   var $target = $(target);
+  //
+  //   $('html, body').stop().animate({
+  //     'scrollTop': $target.offset().top - 73
+  //   }, 900, 'swing');
+  //
+  // });
 
   // Smooth scrolling to sections mobile
   $('.nav-item-mobile a[href^="#"]').on('click', function(e) {
@@ -74,7 +74,7 @@ angular.module('peiserApp')
     var window_top = $(window).scrollTop();
   });
 
-  var aChildren = $('.nav-item').children(); // find the a children of the list items
+  var aChildren = $('.nav-item-mobile').children(); // find the a children of the list items
   var aArray = []; // create the empty aArray
   for (var i = 0; i < aChildren.length; i++) {
     var aChild = aChildren[i];
