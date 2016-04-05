@@ -2478,25 +2478,23 @@ button.logInBtn:active {
 .postContentInput:focus {
   outline: none; }
 
-button.publishBtn {
-  background-color: #fff;
-  border: 1px solid #5fcf80;
+input[type="submit"] {
+  -webkit-appearance: none; }
+
+html input[disabled] {
+  opacity: 0.3; }
+
+input.postSubmitBtn {
+  background-color: #5fcf80;
   width: 7em;
   height: 2em;
-  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border-radius: 10px;
   font-size: 1em;
-  color: #5fcf80; }
-
-button.publishBtn:hover {
-  background-color: #5fcf80;
   color: #fff; }
 
-button.publishBtn:active {
-  background-color: #5fcf80;
-  color: #fff; }
-
-button.publishBtn:focus {
+input.postSubmitBtn:focus {
   outline: 0; }
 
 /***************
@@ -2505,21 +2503,27 @@ button.publishBtn:focus {
 a:-webkit-any-link {
   text-decoration: none; }
 
-.blogWrapper {
+#blogWrapper {
+  margin: 0 auto;
+  padding: 1em; }
+
+.blogSubHeadline {
+  padding-bottom: 2em; }
+
+.blogContent {
   max-width: 960px;
   margin: 0 auto; }
 
-.blogContent {
-  max-width: 1230px;
-  margin: 0 auto; }
-
-.blogHeader {
-  padding-top: 3em;
-  text-align: center; }
+h3.articleTitle {
+  margin-bottom: 0; }
 
 .articleContent {
   padding-left: 0;
   white-space: pre-line; }
+
+.blogPostDate {
+  text-align: center;
+  margin-bottom: 1em; }
 
 button.editBtn {
   color: #5fcf80;
@@ -2540,6 +2544,34 @@ button.editBtn:active {
   color: #fff; }
 
 button.editBtn:focus {
+  outline: 0; }
+
+/***************
+Edit Modal
+***************/
+textarea.editable-post {
+  width: 37.5em;
+  height: 8.750em; }
+
+button.publishBtn {
+  color: #5fcf80;
+  background-color: #fff;
+  border: 1px solid #5fcf80;
+  width: 7em;
+  height: 2em;
+  margin-left: 1em;
+  border-radius: 10px;
+  font-size: 1em; }
+
+button.publishBtn:hover {
+  background-color: #5fcf80;
+  color: #fff; }
+
+button.publishBtn:active {
+  background-color: #5fcf80;
+  color: #fff; }
+
+button.publishBtn:focus {
   outline: 0; }
 
 button.deleteBtn {
@@ -2743,8 +2775,8 @@ Total Page Rules
     outline: none; }
 
   /*****************
-Section Alignment
-*****************/
+  Section Alignment
+  *****************/
   #information {
     margin: 0 auto;
     width: 100%; }
@@ -2861,6 +2893,9 @@ Section Alignment
   footer {
     background-color: #fff;
     text-align: center; } }
+@media only screen and (max-width: 960px) {
+  #blogWrapper {
+    max-width: 480px; } }
 @media only screen and (max-width: 490px) {
   html,
   body {
@@ -2912,6 +2947,10 @@ Section Alignment
     width: 2.5em;
     height: 2.5em;
     padding-top: 5px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+
+  textarea.editable-post {
+    width: 13em;
+    height: 8.750em; } }
 
 /*# sourceMappingURL=styles.css.map */

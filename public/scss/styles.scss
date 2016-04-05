@@ -525,25 +525,24 @@ button.logInBtn:active {
 .postContentInput:focus {
   outline: none;
 }
-button.publishBtn {
-  background-color: $background-color;
-  border: 1px solid $intro-color;
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+html input[disabled] {
+  opacity: 0.3;
+}
+input.postSubmitBtn {
+  background-color: $intro-color;
   width: 7em;
   height: 2em;
-  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border-radius: 10px;
   font-size: 1em;
-  color: $intro-color;
-}
-button.publishBtn:hover {
-  background-color: $intro-color;
   color: $background-color;
 }
-button.publishBtn:active {
-  background-color: $intro-color;
-  color: $background-color;
-}
-button.publishBtn:focus {
+input.postSubmitBtn:focus {
   outline: 0;
 }
 /***************
@@ -553,22 +552,28 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-.blogWrapper {
-  max-width: 960px;
+#blogWrapper {
   margin: 0 auto;
+  padding: 1em;
+}
+.blogSubHeadline {
+  padding-bottom: 2em;
 }
 
 .blogContent {
-  max-width: 1230px;
+  max-width: 960px;
   margin: 0 auto;
 }
-.blogHeader {
-  padding-top: 3em;
-  text-align: center;
+h3.articleTitle {
+  margin-bottom: 0;
 }
 .articleContent {
   padding-left: 0;
   white-space: pre-line;
+}
+.blogPostDate {
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 // Edit Blog Post Button
@@ -591,6 +596,37 @@ button.editBtn:active {
   color: $background-color;
 }
 button.editBtn:focus {
+  outline: 0;
+}
+
+/***************
+Edit Modal
+***************/
+textarea.editable-post {
+  width: 37.5em;
+  height: 8.750em;
+}
+
+// Publish Edited Blog Post Button
+button.publishBtn {
+  color: $intro-color;
+  background-color: $background-color;
+  border: 1px solid $intro-color;
+  width: 7em;
+  height: 2em;
+  margin-left: 1em;
+  border-radius: 10px;
+  font-size: 1em;
+}
+button.publishBtn:hover {
+  background-color: $intro-color;
+  color: $background-color;
+}
+button.publishBtn:active {
+  background-color: $intro-color;
+  color: $background-color;
+}
+button.publishBtn:focus {
   outline: 0;
 }
 
@@ -801,7 +837,7 @@ header {
   button.headerButton:focus {
     outline: none;
   }
-  /*****************
+/*****************
 Section Alignment
 *****************/
   #information {
@@ -922,6 +958,12 @@ Services/Philosophy Section
     text-align: center;
   }
 }
+@media only screen and (max-width: 960px) {
+  #blogWrapper {
+    max-width: 480px;
+  }
+
+}
 @media only screen and (max-width: 490px) {
   html,
   body {
@@ -974,5 +1016,9 @@ Services/Philosophy Section
     height: 2.5em;
     padding-top: 5px;
     margin-right: 20px;
+  }
+  textarea.editable-post {
+    width: 13em;
+    height: 8.750em;
   }
 }

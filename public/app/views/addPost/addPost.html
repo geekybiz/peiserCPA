@@ -14,8 +14,8 @@
   <!-- <label class="postContent">Content</label>
   <div id="firepad" ng-model="post.content"></div> -->
 
-  <!-- <button class="publishBtn" type="button" ng-disabled="!post.title || !post.content" name="button">Publish</button> -->
+  <!-- <button  class="publishBtn" type="submit" ng-disabled="!post.title || !post.content" name="button">Publish</button> -->
 
-  <input type="submit" class="publishBtn" type="button" name="button"  value="Publish" />
+  <input type="submit" class="postSubmitBtn" ng-disabled="!post.title || !post.content" value="Publish" />
   </form>
 </div>
