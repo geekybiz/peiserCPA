@@ -7,15 +7,8 @@ angular.module('peiserApp')
       var fb = $firebaseArray(firebaseObj);
       var title = $scope.post.title;
       var post = $scope.post.content;
-      // var myJSONString = JSON.stringify(post);
-      // var myEscapedJSONString = myJSONString.replace(/\\n/g, "\\n")
-      //                                 .replace(/\\'/g, "\\'")
-      //                                 .replace(/\\"/g, '\\"')
-      //                                 .replace(/\\&/g, "\\&")
-      //                                 .replace(/\\r/g, "\\r")
-      //                                 .replace(/\\t/g, "\\t")
-      //                                 .replace(/\\b/g, "\\b")
-      //                                 .replace(/\\f/g, "\\f");
+      console.log($scope.post.content);
+
 
       fb.$add({
         title: title,
@@ -31,29 +24,41 @@ angular.module('peiserApp')
     }
 
 
-  // function init() {
-  //   var firepadRef = new Firebase("https://peisercpa.firebaseio.com");
-  //   var codeMirror = CodeMirror(document.getElementById('firepad'), {
-  //     lineWrapping: true
-  //   });
-  //   var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, {
-  //     richTextShortcuts: true,
-  //     richTextToolbar: true
-  //   });
+    $scope.tinyOptions = {
+      selector: "textarea.postContentInput",
+      theme: "modern",
+      paste_data_images: true,
+      plugins: [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars code fullscreen",
+        "insertdatetime media nonbreaking save table contextmenu directionality",
+        "emoticons template paste textcolor colorpicker textpattern"
+      ],
+      toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+      toolbar2: "print preview media | forecolor backcolor emoticons",
+      image_advtab: true,
+      file_picker_callback: function(callback, value, meta) {
+        if (meta.filetype == 'image') {
+          $('#upload').trigger('click');
+          $('#upload').on('change', function() {
+            var file = this.files[0];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+              callback(e.target.result, {
+                alt: ''
+              });
+            };
+            reader.readAsDataURL(file);
+          });
+        }
+      }
+    }
 
 
-
-  //   firepad.on('ready', function(){
-  //     // if (firepad.isHistoryEmpty()) {
-  //     //   firepad.setHtml(
-  //     //     '<p> Enter text here </p>'
-  //     //   )
-  //     // }
-  //   });
-  // }
-  //
-  // init();
-
+    $scope.logOut = function() {
+      CommonProp.logOutUser();
+      console.log('logged out');
+    }
 
 
 

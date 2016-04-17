@@ -2478,6 +2478,9 @@ button.logInBtn:active {
 .postContentInput:focus {
   outline: none; }
 
+.hidden {
+  display: none; }
+
 input[type="submit"] {
   -webkit-appearance: none; }
 

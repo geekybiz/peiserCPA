@@ -8,14 +8,13 @@
 
   <div class="contentArea">
     <label class="postContent">Content</label>
-      <textarea class="postContentInput" ui-tinymce ng-model="post.content"></textarea>
+      <textarea class="postContentInput" ui-tinymce="tinyOptions" ng-model="post.content"></textarea>
   </div>
 
-  <!-- <label class="postContent">Content</label>
-  <div id="firepad" ng-model="post.content"></div> -->
+  <input name="image" type="file" id="upload" class="hidden" onchange="">
 
-  <!-- <button  class="publishBtn" type="submit" ng-disabled="!post.title || !post.content" name="button">Publish</button> -->
+<!-- ng-disabled="!post.title || !post.content" -->
 
-  <input type="submit" class="postSubmitBtn" ng-disabled="!post.title || !post.content" value="Publish" />
+  <input type="submit" class="postSubmitBtn"  value="Publish" />
   </form>
 </div>
