@@ -9,6 +9,7 @@ angular.module('peiserApp')
     e.preventDefault();
     var username = $scope.user.email;
     var password = $scope.user.password;
+
     loginObj.$authWithPassword({
       email: username,
       password: password

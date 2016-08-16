@@ -36,6 +36,14 @@ angular.module('peiserApp')
       ],
       toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
       toolbar2: "print preview media | forecolor backcolor emoticons",
+      style_formats: [{
+        title: 'Image Center',
+        selector: 'img',
+        styles: {
+          'text-align': 'center',
+          'margin': '0 auto'
+        }
+      }],
       image_advtab: true,
       file_picker_callback: function(callback, value, meta) {
         if (meta.filetype == 'image') {
@@ -54,13 +62,9 @@ angular.module('peiserApp')
       }
     }
 
-
-    $scope.logOut = function() {
-      CommonProp.logOutUser();
-      console.log('logged out');
+    if(!CommonProp.getUser()){
+      $location.path('/home');
     }
-
-
 
 
   }]);

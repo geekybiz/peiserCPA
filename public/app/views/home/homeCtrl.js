@@ -1,8 +1,9 @@
 angular.module('peiserApp')
-.controller('homeCtrl', ['$scope', function($scope){
+.controller('homeCtrl', ['$scope', 'CommonProp', function($scope, CommonProp){
+
+  $scope.username = CommonProp.getUser();
 
   // Years in business
-
   var date = new Date();
 
   $scope.year = date.getFullYear();

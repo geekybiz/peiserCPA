@@ -42,17 +42,21 @@
     <div class="articleContent" ng-bind-html="article.post">
     </div>
 
-
+    {{ !loggedIn() }}
     <!-- Edit/Delete Modal Triggers -->
     <a href="#blogModal" modal>
-      <button class="editBtn" type="button" name="button" ng-click="editPost(article.$id)">Edit</button>
+      <button  class="editBtn" type="button" name="button"  ng-click="editPost(article.$id)" ng-hide="loggedIn()">Edit</button>
     </a>
     <a href="#deleteModal" modal>
-      <button class="deleteBtn" type="button" name="button" ng-click="confirmDelete(article.$id)">Delete</button>
+      <button class="deleteBtn" type="button" name="button" ng-click="confirmDelete(article.$id)" ng-hide="loggedIn()">Delete</button>
     </a>
   </div>
 </div>
 
+
+<!--
+ ng-if="loggedIn"
+ ng-if="loggedIn" -->
 
 
 
