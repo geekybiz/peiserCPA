@@ -34,7 +34,7 @@
 <a href="/#addPost">Add Post</a>
 
 <div id="blogWrapper">
-  <div class="blogContent" ng-repeat="article in articles">
+  <div class="blogContent" ng-repeat="article in articles | orderBy:'-$id'">
     <h3 class="articleTitle">{{article.title}}</h3>
     <div class="blogPostDate">
       {{article.date | date: 'MM/dd/yyyy'}}
@@ -42,21 +42,17 @@
     <div class="articleContent" ng-bind-html="article.post">
     </div>
 
-    {{ !loggedIn() }}
+
+
     <!-- Edit/Delete Modal Triggers -->
-    <a href="#blogModal" modal>
-      <button  class="editBtn" type="button" name="button"  ng-click="editPost(article.$id)" ng-hide="loggedIn()">Edit</button>
+    <a ng-show="loggedIn()" href="#blogModal" modal>
+      <button class="editBtn" type="button" name="button" ng-click="editPost(article.$id)">Edit</button>
     </a>
-    <a href="#deleteModal" modal>
-      <button class="deleteBtn" type="button" name="button" ng-click="confirmDelete(article.$id)" ng-hide="loggedIn()">Delete</button>
+    <a ng-show="loggedIn()" href="#deleteModal" modal>
+      <button class="deleteBtn" type="button" name="button" ng-click="confirmDelete(article.$id)">Delete</button>
     </a>
   </div>
 </div>
-
-
-<!--
- ng-if="loggedIn"
- ng-if="loggedIn" -->
 
 
 

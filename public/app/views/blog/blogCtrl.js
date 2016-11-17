@@ -4,6 +4,7 @@ angular.module('peiserApp')
 
     var syncArray = $firebaseArray(firebaseObj);
     $scope.username = CommonProp.getUser();
+
     $scope.loggedIn = function () {
       if ($scope.username) {
         return true;
@@ -11,7 +12,6 @@ angular.module('peiserApp')
         return false;
       }
     }
-    // CommonProp.loggedIn();
 
 
     $scope.articles = syncArray;

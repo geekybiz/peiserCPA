@@ -22,13 +22,13 @@ angular.module('peiserApp')
       localStorage.removeItem('userEmail');
       console.log('done logout');
       $location.path('/home');
-    },
-    loggedIn: function(){
-      if(user){
-        return true;
-      } else {
-        return false;
-      }
     }
+    // loggedIn: function(){
+    //   if(user){
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // }
   };
 }]);
