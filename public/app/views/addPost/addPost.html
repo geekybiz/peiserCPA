@@ -13,8 +13,15 @@
 
   <input name="image" type="file" id="upload" class="hidden" onchange="">
 
-<!-- ng-disabled="!post.title || !post.content" -->
 
-  <input type="submit" class="postSubmitBtn"  value="Publish" />
+
+  <input ng-disabled="!post.title || !post.content" type="submit" class="postSubmitBtn"  value="Publish"  />
+  
+  <a href="/#blog">
+    <button class="backToBlogBtn" type="button">Back to Blog</button>
+  </a>
   </form>
+
+
+
 </div>

@@ -1,5 +1,5 @@
 angular.module('peiserApp')
-.controller('mainCtrl', ['$scope', 'CommonProp', function($scope, CommonProp){
+.controller('mainCtrl', ['$scope', 'CommonProp', '$location', function($scope, CommonProp, $location){
 
   // Automatic time updates
 
@@ -13,6 +13,7 @@ angular.module('peiserApp')
 
   $scope.logOut = function() {
     CommonProp.logOutUser();
+    $location.path('/logOut');
     console.log('logged out');
   }
 

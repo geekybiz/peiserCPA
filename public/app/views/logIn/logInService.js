@@ -20,15 +20,7 @@ angular.module('peiserApp')
       logInObj.$unauth();
       user = '';
       localStorage.removeItem('userEmail');
-      console.log('done logout');
       $location.path('/home');
     }
-    // loggedIn: function(){
-    //   if(user){
-    //     return true;
-    //   } else {
-    //     return false;
-    //   }
-    // }
   };
 }]);

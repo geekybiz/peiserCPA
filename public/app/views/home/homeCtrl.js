@@ -3,6 +3,14 @@ angular.module('peiserApp')
 
   $scope.username = CommonProp.getUser();
 
+  $scope.loggedIn = function () {
+    if ($scope.username) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   // Years in business
   var date = new Date();
 

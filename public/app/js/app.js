@@ -27,6 +27,12 @@ angular.module('peiserApp', ['ui.router', 'firebase', 'ui.materialize', 'ui.tiny
     controller: 'addPostCtrl'
   })
 
+  .state('logOut', {
+    url: '/logOut',
+    templateUrl: 'app/views/logOut/logOut.html',
+    controller: 'logOutCtrl'
+  })
+
   $urlRouterProvider.otherwise('/');
 
 }]);

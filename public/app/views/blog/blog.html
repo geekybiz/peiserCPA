@@ -25,13 +25,12 @@
   </div>
 
   <!-- Intro-Buttons -->
-  <!-- <div class="share">
-    <a>
-      <button class="contact" type="button" name="Click to Email">Contact Us</button>
+  <div>
+    <a ng-show="loggedIn()" href="/#addPost">
+      <button class="contact" type="button" name="Click to Email">Add Post</button>
     </a>
-  </div> -->
+  </div>
 </section>
-<a href="/#addPost">Add Post</a>
 
 <div id="blogWrapper">
   <div class="blogContent" ng-repeat="article in articles | orderBy:'-$id'">

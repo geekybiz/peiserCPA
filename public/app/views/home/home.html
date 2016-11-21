@@ -1,6 +1,6 @@
 <header2>
-  <div class="status">
-    Logged In:{{username}}
+  <div ng-if="loggedIn()" class="status">
+    Welcome {{username}}!
   </div>
   <h1 id="logo-mobile"><a href="#">Bob Peiser, CPA</a></h1>
   <nav class="mobile">
@@ -146,6 +146,42 @@
           </p>
         </div>
       </div>
+
+      <footer ng-controller="mainCtrl">
+        <div class="date">
+          &copy;{{year}} Bob Peiser, CPA
+        </div>
+        <div class="contact-block">
+          <a href="tel:479-756-1199">
+            <img class="contact" src="images/phone.png" alt="call" />
+          </a>
+          <a href="mailto:bobpeisercpa@gmail.com">
+            <img class="contact" src="images/Email.png" alt="email" />
+          </a>
+          <a href="https://www.facebook.com/Bob-Peiser-CPA-Payroll-Tax-Preparation-Bookkeeping-Services-387255728145978/info/?tab=overview" target="_blank">
+            <img class="contact" src="images/Facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://www.linkedin.com/in/bob-peiser-08822a87" target="_blank">
+            <img class="contact" src="images/LinkedIn.svg" alt="linked-in" />
+          </a>
+          <a href="https://goo.gl/maps/z8hZJLnuxcJ2" target="_blank">
+            <img class="contact" src="images/small-business.png" alt="office location" />
+          </a>
+        </div>
+        <div class="contactLinks">
+          <div class="icons-link">
+            <a href="https://icons8.com/" target="_blank">Icons provided by <span class="icons">Icons8</span></a>
+          </div>
+          <div class="developer">
+            <a href="http://www.nathanallen.info/#/" target="_blank">Web design and development provided by <span class="icons">Nathan Allen</span></a>
+          </div>
+          <div class="logIn">
+            <a class="logIn" href="/#logIn">Log-In</a>
+            <a class="logOut" style="cursor:pointer;" ng-click="logOut()">Log-Out</a>
+          </div>
+        </div>
+      </footer>
+
 
       <!-- MODAL CONTENT -->
       <div id="contact-options">

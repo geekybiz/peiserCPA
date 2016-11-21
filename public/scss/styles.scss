@@ -536,8 +536,9 @@ input[type="submit"] {
 html input[disabled] {
   opacity: 0.3;
 }
-input.postSubmitBtn {
+ .postSubmitBtn {
   background-color: $intro-color;
+  border: none;
   width: 7em;
   height: 2em;
   margin-top: 1em;
@@ -546,9 +547,24 @@ input.postSubmitBtn {
   font-size: 1em;
   color: $background-color;
 }
-input.postSubmitBtn:focus {
+.postSubmitBtn:focus {
   outline: 0;
 }
+.backToBlogBtn {
+ float: right;
+ background-color: $neutral-color;
+ border: none;
+ width: 7em;
+ height: 2em;
+ margin-top: 1em;
+ margin-bottom: 1em;
+ border-radius: 10px;
+ font-size: 1em;
+ color: $background-color;
+}
+.backToBlogBtn:focus {
+ outline: 0;
+ }
 /***************
   Blog Section
 ***************/
@@ -687,14 +703,54 @@ button.cancelBtn:focus {
 }
 
 /***************
+ Log Out Section
+***************/
+#logOut-view{
+  min-height: 100%;
+  margin-bottom: -162px;
+  margin: 0 auto;
+  text-align: center;
+  background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/jeterFarewell.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.logOutMsg{
+  color: white;
+  margin: 0 auto;
+  padding-top: 5em;
+}
+
+.logOutMsg > p{
+  font-size: 2em;
+}
+.push{
+  height: 700px;
+}
+.homeBtn{
+background-color: $neutral-color;
+border: none;
+width: 10em;
+height: 2em;
+margin-top: 1em;
+margin-bottom: 1em;
+border-radius: 10px;
+font-size: 1em;
+color: $background-color;
+}
+
+/***************
   Footer
 ***************/
 footer {
   background-color: $alt-background;
   text-align: center;
-}
-footer {
-  top: 0.5em;
+  bottom: 0;
+  top: .5em;
 }
 .date.ng-binding {
   padding-top: 10px;

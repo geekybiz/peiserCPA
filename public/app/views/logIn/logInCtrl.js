@@ -15,11 +15,9 @@ angular.module('peiserApp')
       password: password
     })
     .then(function(user){
-      console.log('Authentication successful');
-      $location.path('/addPost');
+      $location.path('/');
       CommonProp.setUser(user.password.email);
     }, function(error) {
-      console.log('Authentication failure');
     });
   }
 
